@@ -44,7 +44,7 @@
 #define MAX_MESSAGE_LEN			4096		//Citadel edit: What's the WORST that could happen?
 #define MAX_FLAVOR_LEN			4096
 #define MIN_FLAVOR_LEN			0
-#define MIN_OOC_LEN				20 // Will not allow just smileys to be on OOC notes.
+#define MIN_OOC_LEN				0 // Will not allow just smileys to be on OOC notes.
 #define MAX_TASTE_LEN			40
 #define MAX_NAME_LEN			82 // Kekekkeeke
 #define MAX_BROADCAST_LEN		512
