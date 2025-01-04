@@ -941,6 +941,3 @@ GLOBAL_LIST_INIT(personalitytrait2description, list(
 		. += ""
 		. += "<span class='binarysay'>🏥 - This person looks like they know how to keep your bits glued together and your blood inside you. How nice.</span>"
  */
-
-
-		
