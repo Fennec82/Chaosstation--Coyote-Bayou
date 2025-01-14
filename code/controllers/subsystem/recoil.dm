@@ -15,6 +15,8 @@ SUBSYSTEM_DEF(recoil)
 	name = "Recoil"
 	flags = SS_BACKGROUND
 	wait = 0.2 SECONDS // Fast processing! But, not too fast. Like a medium rare steak.
+	/// If false, just, just ignore this whole system, its not real. looks real but it isnt
+	var/use_recoil = TRUE
 	/// Time to datumize the recoil system.
 	/// Format: list("ckey" = /datum/mob_recoil, ...)
 	var/list/mob_recoils = list()
@@ -64,7 +66,7 @@ SUBSYSTEM_DEF(recoil)
 	var/recoil_softcap = 30
 	var/recoil_movement_spread_cap = 10
 
-	var/kick_to_recoil_mult = 1
+	var/kick_to_recoil_mult = 0.65
 
 	var/use_movement_recoil = TRUE
 	var/use_shoot_recoil = TRUE
@@ -72,7 +74,8 @@ SUBSYSTEM_DEF(recoil)
 	var/recoil_min_movement = -40
 	var/recoil_max_movement = 15
 	var/recoil_max_shoot = 40
-	var/recoil_max_spread = MAX_ACCURACY_OFFSET
+	var/recoil_max_spread = MAX_ACCURACY_OFFSET / 2
+	var/recoil_max_spread_turbofrick = MAX_ACCURACY_OFFSET
 
 	var/recoil_movement_increase_multiplier = 1
 	var/recoil_shoot_increase_multiplier = 1
@@ -157,7 +160,8 @@ SUBSYSTEM_DEF(recoil)
 	return LAZYACCESS(gun_recoils, gun_recoil.index)
 
 /datum/controller/subsystem/recoil/proc/get_output_offset(spread, mob/living/shotter, obj/item/gun/shoot)
-	spread += get_offset(shotter, FALSE, TRUE)
+	if(use_recoil) // COOL SYSTEM DAN
+		spread += get_offset(shotter, FALSE, TRUE)
 	spread = clamp(spread, 0, recoil_max_spread)
 	var/mean = spread * recoil_equation_gauss_mean_mult
 	var/std = spread * recoil_equation_gauss_std_mult
@@ -201,8 +205,10 @@ SUBSYSTEM_DEF(recoil)
 		if(istype(shotter.loc, /obj/item/clothing/head/mob_holder) && isliving(shotter.loc.loc))
 			my_angle += (abs(get_offset(shotter.loc.loc, FALSE, TRUE)) * SIGN(my_angle))
 			my_angle *= 1.5 // just a little bit more
-
-	return round(clamp(my_angle, -recoil_max_spread, recoil_max_spread), 0.1)
+	var/turbomax = recoil_max_spread
+	if(turbofrick_unwielded_spread)
+		turbomax = recoil_max_spread_turbofrick
+	return round(clamp(my_angle, -turbomax, turbomax), 0.1)
 
 ////////////// MOB RECOIL STUFF //////////////
 /datum/controller/subsystem/recoil/proc/kickback(mob/living/user, atom/my_weapon, recoil_tag = RECOIL_TAG_DEFAULT, recoil_in = 1)

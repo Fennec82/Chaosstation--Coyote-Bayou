@@ -1178,7 +1178,6 @@
 		/obj/item/stock_parts/matter_bin/simple = 1,
 		/obj/item/stock_parts/cell = 1,
 		/obj/item/circuitboard/machine/autolathe/ammo/improvised = 1,
-		/obj/item/stock_parts/chem_cartridge/garbage = 1,
 	)
 
 /obj/effect/spawner/lootdrop/f13/common_parts
@@ -1190,7 +1189,6 @@
 		/obj/item/stock_parts/micro_laser/high = 1,
 		/obj/item/stock_parts/matter_bin/adv = 1,
 		/obj/item/stock_parts/cell/high = 1,
-		/obj/item/stock_parts/chem_cartridge/simple = 1,
 	)
 
 /obj/effect/spawner/lootdrop/f13/uncommon_parts
@@ -1202,7 +1200,6 @@
 		/obj/item/stock_parts/micro_laser/ultra = 1,
 		/obj/item/stock_parts/matter_bin/super = 1,
 		/obj/item/stock_parts/cell/super = 1,
-		/obj/item/stock_parts/chem_cartridge/crafted = 1,
 	)
 
 /obj/effect/spawner/lootdrop/f13/rare_parts
@@ -1214,7 +1211,6 @@
 		/obj/item/stock_parts/micro_laser/quadultra = 1,
 		/obj/item/stock_parts/matter_bin/bluespace = 1,
 		/obj/item/stock_parts/cell/hyper = 1,
-		/obj/item/stock_parts/chem_cartridge/pristine = 1,
 		/obj/item/blueprint/research = 1,
 	)
 
@@ -1237,7 +1233,7 @@
 		/obj/item/restraints/handcuffs/cable = 1,
 		/obj/item/restraints/handcuffs/sinew = 1,
 		/obj/item/lockpick_set = 1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_one = 1,
+		// /obj/item/book/granter/crafting_recipe/gunsmith_one = 1,
 		/obj/item/book/granter/crafting_recipe/ODF = 1,
 		/obj/item/geiger_counter = 1,
 		/obj/item/reagent_containers/glass/beaker = 1,
@@ -1269,7 +1265,7 @@
 		/obj/item/mop = 1,
 		/obj/item/lockpick_set = 1,
 		/obj/item/stealthboy = 1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_two = 1,
+		// /obj/item/book/granter/crafting_recipe/gunsmith_two = 1,
 		/obj/item/book/granter/crafting_recipe/scav_one = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/reagent_containers/glass/beaker/large = 1,
@@ -1294,7 +1290,7 @@
 		/obj/item/mop/advanced = 1,
 		/obj/item/stealthboy = 1,
 		/obj/item/book/granter/action/drink_fling = 1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_three = 1,
+		// /obj/item/book/granter/crafting_recipe/gunsmith_three = 1,
 		/obj/item/book/granter/crafting_recipe/scav_two = 1,
 		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/reagent_containers/glass/beaker/plastic = 1,
@@ -1319,7 +1315,7 @@
 		/obj/item/defibrillator/compact = 1,
 		/obj/item/extinguisher/advanced = 1,
 		/obj/item/stealthboy = 1,
-		/obj/item/book/granter/crafting_recipe/gunsmith_four = 1,
+		// /obj/item/book/granter/crafting_recipe/gunsmith_four = 1,
 		/obj/item/book/granter/crafting_recipe/scav_three = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/reagent_containers/glass/beaker/meta = 1,

@@ -212,8 +212,6 @@ GLOBAL_LIST_INIT(trash_chem, list(
 	/obj/item/export/bottle/whiskey = 10,
 	/obj/item/export/bottle/vodka = 10,
 	/obj/item/export/bottle/nukashine = 1,
-	/obj/item/stock_parts/chem_cartridge/garbage = 10,
-	/obj/item/stock_parts/chem_cartridge/simple = 1,
 	/obj/item/reagent_containers/pill/patch/jet = 5,
 	/obj/item/reagent_containers/pill/patch/turbo = 1,
 	/obj/item/reagent_containers/pill/healingpowder = 10,
@@ -816,46 +814,46 @@ GLOBAL_LIST_INIT(loot_t3_money, list(
 	/obj/item/stack/f13Cash/random/high
 ))
 
-GLOBAL_LIST_INIT(loot_skillbook, list(
-	/obj/item/book/granter/trait/chemistry,
-	// /obj/item/book/granter/trait/trekking,
-	/obj/item/book/granter/trait/pa_wear,
-	/obj/item/book/granter/crafting_recipe/gunsmith_one,
-	/obj/item/book/granter/crafting_recipe/gunsmith_two,
-	/obj/item/book/granter/crafting_recipe/gunsmith_three,
-	/obj/item/book/granter/crafting_recipe/gunsmith_four
-))
+// GLOBAL_LIST_INIT(loot_skillbook, list(
+// 	/obj/item/book/granter/trait/chemistry,
+// 	// /obj/item/book/granter/trait/trekking,
+// 	/obj/item/book/granter/trait/pa_wear,
+// 	/obj/item/book/granter/crafting_recipe/gunsmith_one,
+// 	/obj/item/book/granter/crafting_recipe/gunsmith_two,
+// 	/obj/item/book/granter/crafting_recipe/gunsmith_three,
+// 	/obj/item/book/granter/crafting_recipe/gunsmith_four
+// ))
 
-GLOBAL_LIST_INIT(loot_craft_advanced, list(
-	/obj/item/advanced_crafting_components/flux,
-	/obj/item/advanced_crafting_components/lenses,
-	/obj/item/advanced_crafting_components/conductors,
-	/obj/item/advanced_crafting_components/receiver,
-	/obj/item/advanced_crafting_components/assembly,
-	/obj/item/advanced_crafting_components/alloys
-))
+// GLOBAL_LIST_INIT(loot_craft_advanced, list(
+// 	/obj/item/advanced_crafting_components/flux,
+// 	/obj/item/advanced_crafting_components/lenses,
+// 	/obj/item/advanced_crafting_components/conductors,
+// 	/obj/item/advanced_crafting_components/receiver,
+// 	/obj/item/advanced_crafting_components/assembly,
+// 	/obj/item/advanced_crafting_components/alloys
+// ))
 
-GLOBAL_LIST_INIT(loot_t1_blueprint, list(
-	/obj/item/book/granter/crafting_recipe/blueprint/marksman,
-	/obj/item/book/granter/crafting_recipe/blueprint/combatrifle,
-	/obj/item/book/granter/crafting_recipe/blueprint/plasmapistol,
-	/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
-	/obj/item/book/granter/crafting_recipe/blueprint/aer9,
-	/obj/item/book/granter/crafting_recipe/blueprint/smg10mm
-))
+// GLOBAL_LIST_INIT(loot_t1_blueprint, list(
+// 	/obj/item/book/granter/crafting_recipe/blueprint/marksman,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/combatrifle,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/plasmapistol,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/aer9,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/smg10mm
+// ))
 
-GLOBAL_LIST_INIT(loot_t2_blueprint, list(
-	/obj/item/book/granter/crafting_recipe/blueprint/r91,
-	/obj/item/book/granter/crafting_recipe/blueprint/sniper,
-	/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
-	/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
-	/obj/item/book/granter/crafting_recipe/blueprint/lsw,
-	/obj/item/book/granter/crafting_recipe/blueprint/deagle
-))
+// GLOBAL_LIST_INIT(loot_t2_blueprint, list(
+// 	/obj/item/book/granter/crafting_recipe/blueprint/r91,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/sniper,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/lsw,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/deagle
+// ))
 
-GLOBAL_LIST_INIT(loot_t3_blueprint, list(
-	/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
-	/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
-	/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
-	/obj/item/book/granter/crafting_recipe/blueprint/bozar
-))
+// GLOBAL_LIST_INIT(loot_t3_blueprint, list(
+// 	/obj/item/book/granter/crafting_recipe/blueprint/am_rifle,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/citykiller,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/rangemaster,
+// 	/obj/item/book/granter/crafting_recipe/blueprint/bozar
+// ))

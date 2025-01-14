@@ -140,9 +140,9 @@
 			if(HAS_TRAIT(user, TRAIT_BIG_LEAGUES))
 				force_modifier += 25
 			if(HAS_TRAIT(user, TRAIT_LITTLE_LEAGUES))
-				force_modifier += 13
+				force_modifier += 18
 			if(HAS_TRAIT(user, TRAIT_GENTLE))
-				force_modifier += -13
+				force_modifier += -18
 			if(HAS_TRAIT(user, TRAIT_WIMPY))
 				force_modifier += -25
 			if(HAS_TRAIT(user, TRAIT_BUFFOUT_BUFF))
@@ -163,6 +163,9 @@
 
 	M.lastattacker = user.real_name
 	M.lastattackerckey = user.ckey
+	if(isanimal(M))
+		var/mob/living/simple_animal/SA = M
+		SA.give_credit(user)
 
 	user.do_attack_animation(M)
 	if(damage_override)

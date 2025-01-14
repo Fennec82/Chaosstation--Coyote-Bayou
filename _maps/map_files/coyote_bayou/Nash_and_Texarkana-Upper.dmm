@@ -695,11 +695,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/massfusion)
-"aqO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/f13/wood,
-/area/f13/wasteland/nash)
 "aqR" = (
 /obj/structure/closet/fridge/cannibal,
 /obj/item/storage/trash_stack/loot/uncommon,
@@ -936,7 +931,6 @@
 /area/f13/caves)
 "azD" = (
 /obj/structure/bookcase,
-/obj/item/book/granter/crafting_recipe/gunsmith_three,
 /obj/item/storage/trash_stack/loot/uncommon,
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
@@ -3299,7 +3293,7 @@
 /turf/open/floor/wood_common{
 	color = "#779999"
 	},
-/area/f13/wasteland/nash)
+/area/f13/building)
 "bHQ" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/outside/dirt,
@@ -5429,7 +5423,7 @@
 /turf/open/floor/wood_common{
 	color = "#779999"
 	},
-/area/f13/wasteland/nash)
+/area/f13/building)
 "cUY" = (
 /obj/structure/window/fulltile/store,
 /turf/open/floor/f13{
@@ -7295,9 +7289,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
-"dTT" = (
-/turf/closed/wall/f13/wood,
-/area/f13/wasteland/nash)
 "dUa" = (
 /turf/open/floor/wood_wide,
 /area/f13/wasteland)
@@ -9157,7 +9148,7 @@
 /turf/open/floor/wood_common{
 	color = "#779999"
 	},
-/area/f13/wasteland/nash)
+/area/f13/building)
 "eTN" = (
 /turf/open/floor/wood_common,
 /area/f13/building/hospital)
@@ -10167,7 +10158,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/tentwall,
-/area/f13/wasteland/nash)
+/area/f13/building)
 "fwt" = (
 /obj/effect/decal/cleanable/dirt/dust{
 	color = "#11ff11"
@@ -11111,12 +11102,6 @@
 /obj/item/storage/trash_stack/loot/uncommon,
 /turf/open/floor/carpet,
 /area/f13/building/abandoned)
-"fXF" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/planks/pregame,
-/obj/structure/decoration/rag,
-/turf/closed/wall/f13/tentwall,
-/area/f13/wasteland/nash)
 "fXN" = (
 /obj/structure/sign/poster/contraband/pinup_topless,
 /turf/closed/wall/mineral/brick,
@@ -12667,15 +12652,6 @@
 "gJP" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"gKh" = (
-/obj/structure/sign/flag_texas{
-	desc = "No yellow roses here.";
-	icon_state = "texas_animated";
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/turf/open/transparent/openspace,
-/area/f13/wasteland/nash)
 "gKy" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -15409,9 +15385,6 @@
 /area/f13/bar/nash)
 "idL" = (
 /obj/machinery/autolathe/ammo/unlocked,
-/obj/item/book/granter/crafting_recipe/gunsmith_one,
-/obj/item/book/granter/crafting_recipe/gunsmith_three,
-/obj/item/book/granter/crafting_recipe/gunsmith_two,
 /obj/item/stack/ore/blackpowder/twenty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -23076,10 +23049,6 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
-"lXV" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/f13/wood,
-/area/f13/wasteland/nash)
 "lYa" = (
 /obj/machinery/light{
 	bulb_colour = "#BC8F8F";
@@ -26070,13 +26039,6 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
-"nxq" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood_common{
-	color = "#779999"
-	},
-/area/f13/wasteland/nash)
 "nxF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -27935,13 +27897,6 @@
 	color = "#777777"
 	},
 /area/f13/wasteland)
-"ovg" = (
-/obj/structure/table/wood/settler,
-/obj/item/storage/trash_stack/loot/common,
-/turf/open/floor/wood_common{
-	color = "#779999"
-	},
-/area/f13/wasteland/nash)
 "ovG" = (
 /obj/structure/rack/shelf_wood{
 	pixel_y = -1
@@ -29972,11 +29927,6 @@
 	color = "#9c9c9c"
 	},
 /area/f13/building/tribal)
-"pEa" = (
-/turf/closed/wall/f13/coyote/fortress_brick{
-	opacity = 0
-	},
-/area/f13/building)
 "pEp" = (
 /turf/open/floor/carpet/purple,
 /area/f13/building)
@@ -30376,15 +30326,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
-"pOV" = (
-/obj/structure/bed/mattress{
-	pixel_x = 1;
-	pixel_y = -1
-	},
-/turf/open/floor/wood_common{
-	color = "#779999"
-	},
-/area/f13/wasteland/nash)
 "pPv" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Gatehouse";
@@ -34183,9 +34124,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/building/hospital)
-"rRJ" = (
-/turf/closed/wall/f13/coyote/fortress_brick,
-/area/f13/building)
 "rRK" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -36063,7 +36001,7 @@
 /turf/open/floor/wood_common{
 	color = "#779999"
 	},
-/area/f13/wasteland/nash)
+/area/f13/building)
 "sYU" = (
 /obj/structure/spacevine{
 	color = "#225522"
@@ -40008,16 +39946,6 @@
 /obj/structure/barricade/bars,
 /turf/closed/wall/r_wall/rust,
 /area/f13/building)
-"vaJ" = (
-/obj/structure/simple_door/interior,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/lock_bolt{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	icon_state = "bar"
-	},
-/area/f13/wasteland/nash)
 "vaQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -40446,10 +40374,6 @@
 /obj/structure/floodlight_frame,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
-"vlI" = (
-/obj/structure/decoration/rag,
-/turf/closed/wall/f13/wood,
-/area/f13/wasteland/nash)
 "vlJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/simple_door/room,
@@ -42117,7 +42041,7 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/tentwall,
-/area/f13/wasteland/nash)
+/area/f13/building)
 "wgQ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -45075,7 +44999,7 @@
 /obj/structure/decoration/rag,
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood,
-/area/f13/wasteland/nash)
+/area/f13/building)
 "xQb" = (
 /turf/open/floor/wood_wide{
 	icon_state = "wide-broken5"
@@ -50935,9 +50859,9 @@ qnC
 qnC
 tpM
 hew
-dTT
-dTT
-dTT
+fSd
+fSd
+fSd
 qnC
 qnC
 qnC
@@ -51192,9 +51116,9 @@ qnC
 qnC
 ieI
 vfH
-dTT
-pOV
-dTT
+fSd
+aHY
+fSd
 nEl
 wky
 qnC
@@ -51447,11 +51371,11 @@ qnC
 qnC
 qnC
 qnC
-dTT
-dTT
-ovg
-osH
-vlI
+fSd
+fSd
+ccL
+slU
+gYD
 hHi
 oeP
 qnC
@@ -51707,8 +51631,8 @@ qnC
 cUT
 eTI
 bHL
-osH
-fXF
+slU
+sEo
 hHi
 oeP
 qnC
@@ -51962,9 +51886,9 @@ qnC
 qnC
 qnC
 cUT
-nxq
-nxq
-nxq
+fRC
+fRC
+fRC
 xPZ
 hHi
 oeP
@@ -52218,11 +52142,11 @@ qnC
 qnC
 qnC
 qnC
-dTT
-lXV
-nxq
+fSd
+vFs
+fRC
 sYO
-vaJ
+bDA
 hHi
 oeP
 qnC
@@ -52475,9 +52399,9 @@ ehs
 ehs
 ehs
 ehs
-dTT
+fSd
 fwf
-aqO
+izv
 wgo
 xPZ
 hHi
@@ -57073,10 +56997,10 @@ ftt
 ftt
 ftt
 uZC
-rRJ
-rRJ
+cBX
+cBX
 lSv
-rRJ
+cBX
 pNo
 hHi
 hHi
@@ -57330,11 +57254,11 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 ckz
 nAW
-rRJ
-rRJ
+cBX
+cBX
 hHi
 ulz
 ulz
@@ -57587,11 +57511,11 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 uKL
 nAW
 lrK
-rRJ
+cBX
 hHi
 uXc
 qGU
@@ -57844,11 +57768,11 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 cBX
 uNC
 cBX
-rRJ
+cBX
 hHi
 iau
 iau
@@ -58105,7 +58029,7 @@ lSv
 lBh
 cdN
 cyi
-rRJ
+cBX
 hHi
 hHi
 hHi
@@ -58358,11 +58282,11 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 dSz
 pEp
 ueb
-rRJ
+cBX
 hHi
 hHi
 hHi
@@ -58399,7 +58323,7 @@ qnC
 qnC
 qnC
 qnC
-gKh
+qnC
 qnC
 bZh
 bZh
@@ -58615,7 +58539,7 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 aKJ
 pEp
 jtX
@@ -59129,11 +59053,11 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 cBX
 uNC
 cBX
-rRJ
+cBX
 hHi
 hHi
 iau
@@ -59386,11 +59310,11 @@ ftt
 ftt
 ftt
 uZC
-rRJ
+cBX
 jpy
 cdN
 tqr
-rRJ
+cBX
 hHi
 hHi
 hHi
@@ -59638,16 +59562,16 @@ dtb
 dtb
 dtb
 dtb
-rRJ
-rRJ
+cBX
+cBX
 bmB
 bmB
-rRJ
-rRJ
+cBX
+cBX
 jRL
 cdN
 uhD
-rRJ
+cBX
 hHi
 hHi
 hHi
@@ -59895,16 +59819,16 @@ oez
 oez
 dtb
 dtb
-rRJ
-rRJ
+cBX
+cBX
 mNn
 mNn
-rRJ
-rRJ
-rRJ
+cBX
+cBX
+cBX
 lSv
-rRJ
-rRJ
+cBX
+cBX
 hHi
 hHi
 rrx
@@ -60666,12 +60590,12 @@ oez
 oez
 oez
 afb
-rRJ
+cBX
 xbW
 mNn
 mNn
-rRJ
-pEa
+cBX
+cBX
 ftt
 ftt
 ftt
@@ -60923,12 +60847,12 @@ oez
 oez
 oez
 oez
-rRJ
-rRJ
+cBX
+cBX
 xaY
 eJT
-rRJ
-pEa
+cBX
+cBX
 mrM
 mrM
 mrM
@@ -60945,12 +60869,12 @@ mrM
 mrM
 mrM
 mrM
-rRJ
+cBX
 bmB
 bmB
-rRJ
-rRJ
-pEa
+cBX
+cBX
+cBX
 ftt
 ftt
 ftt
@@ -61202,12 +61126,12 @@ oez
 oez
 oez
 mRK
-rRJ
+cBX
 mNn
 mNn
 mNn
-rRJ
-pEa
+cBX
+cBX
 ftt
 ftt
 cfp
@@ -61492,12 +61416,12 @@ qnC
 qnC
 fPe
 ftt
-rRJ
-rRJ
-rRJ
-rRJ
-rRJ
-pEa
+cBX
+cBX
+cBX
+cBX
+cBX
+cBX
 ftt
 ftt
 odJ
@@ -61782,12 +61706,12 @@ ftt
 ftt
 ftt
 ftt
-rRJ
-rRJ
-rRJ
-rRJ
-rRJ
-pEa
+cBX
+cBX
+cBX
+cBX
+cBX
+cBX
 oez
 oez
 oez
@@ -61973,12 +61897,12 @@ oez
 oez
 oez
 afb
-rRJ
+cBX
 xbW
 mNn
 tCZ
-rRJ
-pEa
+cBX
+cBX
 ftt
 ftt
 oPX
@@ -62039,12 +61963,12 @@ ftt
 ftt
 ftt
 ftt
-rRJ
+cBX
 rrM
 enl
 xaY
-rRJ
-pEa
+cBX
+cBX
 dmX
 oez
 oez
@@ -62230,12 +62154,12 @@ oez
 oez
 oez
 oez
-rRJ
-rRJ
+cBX
+cBX
 xaY
 kwP
-rRJ
-pEa
+cBX
+cBX
 mrM
 mrM
 oez
@@ -62263,12 +62187,12 @@ oez
 oez
 mrM
 mrM
-rRJ
+cBX
 rrM
 mNn
 mNn
 mNn
-pEa
+cBX
 mrM
 mrM
 oez
@@ -62520,12 +62444,12 @@ oez
 oez
 oez
 oez
-rRJ
+cBX
 xbW
 mNn
 tCZ
-rRJ
-pEa
+cBX
+cBX
 oez
 oez
 oez
@@ -62777,12 +62701,12 @@ oez
 oez
 oez
 oez
-rRJ
-rRJ
+cBX
+cBX
 eJT
 ccL
-rRJ
-pEa
+cBX
+cBX
 oez
 oez
 oez
@@ -62810,12 +62734,12 @@ oez
 afb
 mrM
 mrM
-rRJ
+cBX
 rrM
 mNn
 mNn
-rRJ
-pEa
+cBX
+cBX
 uiW
 oez
 oez
@@ -63067,12 +62991,12 @@ dtb
 dtb
 oez
 oez
-rRJ
-rRJ
+cBX
+cBX
 mNn
 mNn
-rRJ
-pEa
+cBX
+cBX
 oez
 oez
 oez

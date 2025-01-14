@@ -52,16 +52,17 @@
 #define ui_storage1 "WEST+5:-9,SOUTH:3" //right pocket
 #define ui_resistdelay "East-2:-4,SOUTH+0:36" //This is actually resist bar
 #define ui_overridden_resist "East-2:-4,SOUTH+0:20" //this is the actual resist button
-#define ui_combat_toggle "CENTER+3:0,SOUTH:2"
+#define ui_combat_toggle "CENTER+3:4,SOUTH:2"
 #define ui_zonesel "EAST-3:-5,SOUTH:3"
 #define ui_crafting	"WEST+6:-15,SOUTH+1:1"
+
 #define ui_building "WEST+5:1,SOUTH+1:1"
 #define ui_language_menu "WEST+5:1,SOUTH+1:1"
 
 
 //Right side near hands
 #define ui_wield "CENTER+1:17,SOUTH:4"
-#define ui_acti "CENTER+1:33,SOUTH:3"
+#define ui_acti "CENTER+2:3,SOUTH:3"
 #define ui_pull_resist "East-2:-4,SOUTH+0:4" //THIS IS ACTUALLY THE REST BUTTON?  WHAT THE FUCK? ~TK
 #define ui_drop_throw "East-1:-4,SOUTH+0:4"
 #define ui_sprintbufferloc "East-0:-4,SOUTH:18" //buffer orbs
@@ -69,6 +70,7 @@
 //#define ui_zonesel "Center+5:2,SOUTH:3:1"
 #define ui_mood 	"Center-1:5,South+1:11"
 #define ui_healthdoll 	"EAST-3:-7,SOUTH+1:17"
+#define ui_banking "WEST+5:-11,SOUTH+1:-7"
 #define ui_health 	"Right-3:28,South+2:-18"
 #define ui_stamina "Right-2:27,South+1:+3" // replacing internals button
 #define ui_questbook "EAST-3:-4,SOUTH+2:0"

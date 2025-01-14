@@ -202,12 +202,13 @@ GLOBAL_LIST_INIT(plant_type_weighted, list(
 	"tree" = 10,
 ))
 
-/turf/open/indestructible/ground/outside/dirthole
-	name = "Dirt hole"
-	icon_state = "dirthole"
-	desc = "A dirt hole."
-	slowdown = 1
-	flags_1 = ADJACENCIES_OVERLAY
+// /turf/open/indestructible/ground/outside/dirthole
+// 	name = "Dirt hole"
+// 	icon_state = "dirthole"
+// 	desc = "A dirt hole."
+// 	slowdown = 1
+// 	flags_1 = ADJACENCIES_OVERLAY
+// 	greeble = OUTSIDE_JUNK_DISTRIBUTION
 
 /turf/open/indestructible/ground/outside/river
 	name = "river"
@@ -469,7 +470,7 @@ GLOBAL_LIST_INIT(salvage_spawn_list, list(
 	))
 
 GLOBAL_LIST_INIT(nest_spawn_list, list(
-	/obj/effect/decal/cleanable/dirt/dust = 5,
+	/obj/effect/decal/cleanable/dirt/dust = 15,
 	/obj/structure/nest/gecko = 5,
 	/obj/structure/nest/radroach = 5,
 	/obj/structure/nest/molerat = 5,
@@ -488,6 +489,7 @@ GLOBAL_LIST_INIT(junk_type_weighted, list(
 	desc = "A dirt hole."
 	slowdown = 2
 	flags_1 = ADJACENCIES_OVERLAY
+	greeble = "plant"
 
 /turf/open/indestructible/ground/outside/river
 	name = "river"

@@ -3,6 +3,7 @@
 ///////////
 
 /mob/living/simple_animal/hostile/gecko
+	bounty = 5
 	name = "gecko"
 	desc = "A large mutated reptile with sharp teeth."
 	icon = 'icons/fallout/mobs/animals/wasteanimals.dmi'
@@ -107,7 +108,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(50, 50, 50, 255, 255, 255),
-		MOB_SPEED_LIST(3.2, 3.4, 3.6),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(50),
 		MOB_HEALTH_LIST(30, 35, 40,),
 		MOB_RETREAT_DISTANCE_LIST(0, 1, 3, 5, 7, 9),
@@ -173,6 +174,7 @@
 //Fire Geckos//
 
 /mob/living/simple_animal/hostile/gecko/fire
+	bounty = 9
 	name = "fire spitter gecko"
 	desc = "A large mutated reptile with sharp teeth and a warm disposition. Sorta smells like sulphur."
 	icon = 'icons/fallout/mobs/animals/wasteanimals.dmi'
@@ -263,7 +265,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(200, 40, 40, 255, 45, 45),
-		MOB_SPEED_LIST(, 3.3, 3.7),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(50),
 		MOB_HEALTH_LIST(28, 30, 32),
 		MOB_RETREAT_DISTANCE_LIST(0, 1, 3),
@@ -280,6 +282,7 @@
 //rad Geckos//
 
 /mob/living/simple_animal/hostile/gecko/fire/rads
+	bounty = 8
 	name = "rad spitting gecko"
 	desc = "A large mutated reptile with sharp teeth and a warm disposition. Sorta smells like ozone."
 	icon = 'icons/fallout/mobs/animals/wasteanimals.dmi'
@@ -370,7 +373,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(40, 40, 200, 45, 45, 255),
-		MOB_SPEED_LIST(3.3, 3.7),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(50),
 		MOB_HEALTH_LIST(28, 30, 32),
 		MOB_RETREAT_DISTANCE_LIST(0, 1, 3),
@@ -428,6 +431,7 @@
 //Faster and more aggressive than normal geckos, but also easier even squishier.
 
 /mob/living/simple_animal/hostile/gecko/legacy
+	bounty = 6
 	name = "newt"
 	desc = "A large dog sized amphibious biped with an oddly large mouth for its size. Probably related to geckos in some way."
 	icon = 'icons/fallout/mobs/legacymobs.dmi'
@@ -519,6 +523,7 @@
 
 
 /mob/living/simple_animal/hostile/gecko/legacy/alpha
+	bounty = 15
 	name = "alpha newt"
 	desc = "A large dog sized amphibious biped with an oddly large mouth for its size. Probably related to geckos in some way. This one's drooling a lot and looks sort of tired."
 	icon = 'icons/fallout/mobs/legacymobs.dmi'
@@ -565,7 +570,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(180, 255, 255, 255, 255, 255), //Rmin, Gmin, Bmin, Rmax, Gmax, Bmax
-		MOB_SPEED_LIST(2.4, 2.6),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(80),
 		MOB_HEALTH_LIST(30, 35, 38),
 		MOB_RETREAT_DISTANCE_LIST(0, 1),
@@ -583,6 +588,7 @@
 	H.reagents.add_reagent(/datum/reagent/toxin/staminatoxin, 1)
 
 /mob/living/simple_animal/hostile/gecko/big
+	bounty = 18
 	name = "big gecko"
 	name = "big gecko"
 	desc = "A large mutated reptile with sharp teeth. This one's pretty big, but its eyes seem clouded and it moves a bit clumsily."
@@ -633,7 +639,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(120, 80, 80, 250, 100, 100), //Rmin, Gmin, Bmin, Rmax, Gmax, Bmax
-		MOB_SPEED_LIST(3.0, 3.2),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(80),
 		MOB_HEALTH_LIST(100, 110, 120),
 		MOB_RETREAT_DISTANCE_LIST(0, 1),
@@ -673,7 +679,7 @@
 			MOB_RANDOM_NAME(MOB_NAME_RANDOM_ALL_OF_THEM, 5)\
 		),
 		MOB_COLOR_VARIATION(20, 190, 0, 255, 2, 0),
-		MOB_SPEED_LIST(3, 3.2, 3.4, 3.6),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(100),
 		MOB_HEALTH_LIST(2, 3, 5, 7, 30, 35, 37, 38, 40, 45, 48, 49, 49, 49, 49, 2000),
 		MOB_RETREAT_DISTANCE_LIST(0, 1, 3, 5, 7, 9),
@@ -709,6 +715,7 @@
 //////////////////////////
 
 /mob/living/simple_animal/hostile/stalker
+	bounty = 25
 	name = "greater hellhound"
 	desc = "A hellhound is a fierce, supernatural canine often associated with the underworld, known for its fiery eyes and ominous presence."
 	icon = 'modular_coyote/icons/mob/paramob.dmi'
@@ -796,6 +803,7 @@
 	icon_dead = "nightstalker-legion-dead"
 
 /mob/living/simple_animal/hostile/stalkeryoung
+	bounty = 50
 	name = "hellhound"
 	desc = "A hellhound is a fierce, supernatural canine often associated with the underworld, known for its fiery eyes and ominous presence."
 	icon = 'modular_coyote/icons/mob/paramob.dmi'
@@ -935,6 +943,7 @@
 /////////////
 
 /mob/living/simple_animal/hostile/molerat
+	bounty = 4
 	name = "giant rat"
 	desc = "A large mutated rat that finds its way everywhere. Common in caves and underground areas."
 	icon = 'modular_coyote/icons/mob/rat.dmi'
@@ -984,7 +993,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(50, 50, 50, 255, 255, 255),
-		MOB_SPEED_LIST(3.6, 3.9, 4),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(25),
 		MOB_HEALTH_LIST(15, 20, 25, 26),
 		MOB_RETREAT_DISTANCE_LIST(0, 1),
@@ -1010,6 +1019,7 @@
 
 
 /mob/living/simple_animal/hostile/molerat/micro
+	bounty = 2
 	name = "Swarmling"
 	maxHealth = 10
 	density = FALSE
@@ -1019,7 +1029,7 @@
 	melee_damage_upper = 6
 	variation_list = list(
 		MOB_COLOR_VARIATION(200, 200, 200, 250, 250, 250), //Rmin, Gmin, Bmin, Rmax, Gmax, Bmax
-		MOB_SPEED_LIST(3, 4, 5),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(80),
 		MOB_HEALTH_LIST(10, 13, 15),
 		MOB_RETREAT_DISTANCE_LIST(0, 1),
@@ -1034,6 +1044,7 @@
 	update_transform()
 
 /mob/living/simple_animal/hostile/molerat/leader
+	bounty = 10
 	name = "Giant Rat Broodmother"
 	maxHealth = 40
 	health = 40
@@ -1047,7 +1058,7 @@
 	can_glow_revive = FALSE
 	variation_list = list(
 		MOB_COLOR_VARIATION(245, 215, 0, 255, 220, 5), //Rmin, Gmin, Bmin, Rmax, Gmax, Bmax
-		MOB_SPEED_LIST(3, 4),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(80),
 		MOB_HEALTH_LIST(70, 75, 80),
 		MOB_RETREAT_DISTANCE_LIST(0, 1),
@@ -1111,6 +1122,7 @@
 //GELCUBE
 
 /mob/living/simple_animal/hostile/gelcube
+	bounty = 100
 	name = "gelatinous cube"
 	desc = "A big green radioactive cube creature, it jiggles with menacing wiggles and is making some sort of goofy face at you."
 	icon = 'modular_coyote/icons/mob/vatgrowing.dmi'
@@ -1170,6 +1182,7 @@
 //////////
 
 /mob/living/simple_animal/hostile/bloodbird
+	bounty = 25
 	name = "Blood Bird"
 	desc = "A large mutated turkey vulture."
 	icon = 'icons/fallout/mobs/animals/bloodbird.dmi'
@@ -1243,7 +1256,7 @@
 
 	variation_list = list(
 		MOB_COLOR_VARIATION(50, 50, 50, 255, 255, 255),
-		MOB_SPEED_LIST(1.5, 1.8, 2.0, 2.2),
+		MOB_SPEED_LIST(3.8, 3.9, 4),
 		MOB_SPEED_CHANGE_PER_TURN_CHANCE(50),
 		MOB_HEALTH_LIST(80, 90, 100, 110),
 		MOB_RETREAT_DISTANCE_LIST(0, 0, 1),
