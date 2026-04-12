@@ -187,7 +187,7 @@
 			"Eldrich Closed" = image(icon = 'icons/obj/eldritch.dmi', icon_state = "book"),
 			"Eldrich Opened" = image(icon = 'icons/obj/eldritch.dmi', icon_state = "book_open"),
 		)
-	var/choice = show_radial_menu(user, src, choices, radius = 64, require_near = TRUE)
+	var/choice = show_radial_menu(user, user, choices, radius = 64, require_near = TRUE)
 	switch(choice)
 		if("Yellow")
 			icon = 'modular_roguetown/items/books.dmi'

@@ -5,7 +5,7 @@
 	name = "Ageusia"
 	desc = "You can't taste anything! Toxic food will still poison you."
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You don't get disgusted from anything, but you still suffer chemical side effects."
 	conflicts = list(
 		/datum/quirk/pineapple_liker,
@@ -22,7 +22,7 @@
 	name = "Chocolate intolerance"
 	desc = "Your metabolism finds chocolate rather disagreeable."
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You take toxin damage from eating chocolate. You know. Like a dog."
 	conflicts = list()
 	mob_trait = TRAIT_NO_CHOCOLATE
@@ -34,7 +34,7 @@
 	name = "Peanutbutter difficulties"
 	desc = "Your tongue has difficulty handling the adhesiveness of peanut butter"
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You will lick your lips rapidly and constantly while eating peanut butter. You know. Like a dog."
 	conflicts = list()
 	mob_trait = TRAIT_WHITE_WOMAN
@@ -46,7 +46,7 @@
 	name = "Autobrewery syndrome"
 	desc = "Your natural gut flora ferments many sugary foods and drinks into alcohol."
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Anything with sugar in it turns into alchohol chems in your system, you can take penicillian or eat nonsugary foods to prevent this."
 	conflicts = list()
 	mob_trait = TRAIT_AUTOBREW
@@ -58,7 +58,7 @@
 	name = "Snob"
 	desc = "You care about the finer things, if a room doesn't look nice its just not really worth it, is it?"
 	value = 0
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "WIP In a perfect world this would adjust your mood on the beauty rating of the room you're in, in reality it does nearly nothing. Gives you a good reason to whine about the feng shui. WIP"
 	conflicts = list(
 	)
@@ -93,7 +93,7 @@
 	name = "Ananas Affinity"
 	desc = "You find yourself greatly enjoying fruits of the ananas genus. You can't seem to ever get enough of their sweet goodness!"
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You get a mood boost from eating pineapples."
 	conflicts = list(
 		/datum/quirk/no_taste,
@@ -119,7 +119,7 @@
 	name = "Ananas Aversion"
 	desc = "You find yourself greatly detesting fruits of the ananas genus. Serious, how the hell can anyone say these things are good? And what kind of madman would even dare putting it on a pizza!?"
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You really just hate eating pineapples."
 	conflicts = list(
 		/datum/quirk/no_taste,
@@ -145,7 +145,7 @@
 	name = "Deviant Tastes"
 	desc = "You dislike food that most people enjoy, and find delicious what they don't."
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You can eat stuff like bug meat, rats on a stick, and other things of that nature with no mood debuff. Taaastttyyy?"
 	conflicts = list(
 		/datum/quirk/no_taste,
@@ -172,7 +172,7 @@
 	name = "Monochromacy"
 	desc = "You suffer from full colorblindness, and perceive nearly the entire world in blacks and whites. Sure hope you like Kurasawa movies."
 	value = 0
-	category = "Vision Quirks"
+	category = QUIRK_CATEGORY_VISION_QUIRKS
 	mechanics = "Your vision will have no color in it whatsoever. Kind of like a, uh. Dog."
 	conflicts = list()
 	medical_record_text = "Patient is afflicted with almost complete color blindness."
@@ -193,7 +193,7 @@
 	name = "Aggressive Metabolism"
 	desc = "You gain natural healing from eating food, but your metabolism is aggressively fast, causing you to eat alot of food"
 	value = 0 // This heals 71 brute damage in 16 minutes, but also massively increases your hunger rate. Having no hunger is extremely bad
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You heal naturally, but if your starving, you no longer heal. Starving is very bad for you."
 	conflicts = list() 
 
@@ -209,7 +209,8 @@
 	name = "Masochism"
 	desc = "You are aroused by pain."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "You get a mood boost and aroused by taking pain, though its somewhat limited in this code due to age so it's mostly just from having your ass slapped (disarm intent, target groin, click from behind to do this to others thoug!)"
 	conflicts = list()
 	mob_trait = TRAIT_MASO
@@ -221,7 +222,7 @@
 	name = "Alcohol Intolerance"
 	desc = "You take toxin damage from alcohol rather than getting drunk."
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Pretty straight forward, liquor makes your ticker flicker. Toxin damage from alchohol."
 	conflicts = list(
 		/datum/quirk/alcohol_tolerance
@@ -244,7 +245,7 @@
 	name = "Scarred" //Renamed to be more clear what it is, u ugly af ~TK
 	desc = "You've been around for a long time and seen more than your fair share of action, suffering some pretty nasty scars along the way. For whatever reason, you've declined to get them removed or augmented."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	conflicts = list()
 	gain_text = span_notice("Your body has seen better days.")
 	lose_text = span_notice("Your sins may wash away, but those scars are here to stay...")
@@ -278,7 +279,7 @@
 	name = "Buns of Steel"
 	desc = "You've never skipped ass day. You are completely immune to all forms of ass slapping and anyone who tries to slap your rock hard ass usually gets a broken hand."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "Your ass bites back, doing damage to any who dare to slap your glorious behind."
 	conflicts = list(
 		/datum/quirk/butter_ass,
@@ -291,7 +292,7 @@
 	name = "Buns of Thunder"
 	desc = "That pants-stretching, seat-creaking, undie-devouring ass of yours is as satisfying to smack as it is difficult to keep balanced!"
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "Any time someone smacks your pillowy butt, its jiggling will make moving hard for a few moments! But, it'll satisfy whoever smacked it!"
 	conflicts = list(
 		/datum/quirk/steel_ass,
@@ -305,7 +306,7 @@
 	desc = "You don't seem to show much care for being touched. Whether it's because you're reserved or due to self control, others touching your head won't make you wag your tail should you possess one, and the action may even attract your ire.."
 	mob_trait = TRAIT_DISTANT
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "Being headpatted makes you angry as shit, giving a mood debuff when it happens. Maybe you're just tsundere as shit."
 	conflicts = list(
 		/datum/quirk/headpat_slut,
@@ -319,7 +320,7 @@
 	desc = "You love the feeling of others touching your head! Maybe a little too much, actually... Others patting your head will provide a bigger mood boost and cause aroused reactions."
 	mob_trait = TRAIT_HEADPAT_SLUT
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "You get a bigger mood boost from being petted, maybe uh. A bit of a boost to your libido too, it's hard to tell."
 	conflicts = list(
 		/datum/quirk/headpat_hater,
@@ -333,7 +334,8 @@
 	desc = "You have an urge to put things in your mouth."
 	mob_trait = TRAIT_ORAL_FIXATION
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "You can fit any small sized item in your mouth. Small items will muffle your voice. Tiny items wont."
 	conflicts = list()
 
@@ -341,7 +343,7 @@
 	name = "Overweight"
 	desc = "You're particularly fond of food, and join the round being overweight."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You spawn in overweight and full, this also limits your movement quirks out of Freerunning, Light Step, and Quick Walking. Good if you plan on bleeding a lot near round start, I guess."
 	mob_trait = TRAIT_FAT
 	conflicts = list(
@@ -361,7 +363,7 @@
 	name = "Vegetarian"
 	desc = "You find the idea of eating meat morally and/or physically repulsive."
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You are mechanically disgusted by eating meat."
 	conflicts = list(
 		/datum/quirk/horrifying_tastes,
@@ -389,7 +391,7 @@
 	name = "Multiple Identities"
 	desc = "You have multiple identities voices, names, or you are a multi-headed creature."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Format your name in a manner similar to Rucks-Tucks-Ducks and you can use the action button to toggle between which will be your character name and voice."
 	conflicts = list()
 	mob_trait = TRAIT_HYDRA_HEADS
@@ -439,7 +441,7 @@
 	name = "Language - Tribal Language Comprehension"
 	desc = "You're somehow capable of understanding and speaking the common tribal languages in the area."
 	value = 0
-	category = "Language Quirks"
+	category = QUIRK_CATEGORY_LANGUAGE_QUIRKS
 	mechanics = "You can speak the language of the taiga, shared with the Mountain River Tribe."
 	conflicts = list()
 	gain_text = span_notice("You remember the old ways of your tribe..")
@@ -460,7 +462,7 @@
 	name = "Language - Pokemon Language Comprehension"
 	desc = "You're somehow capable of understanding and speaking the common pokemon language."
 	value = 0
-	category = "Language Quirks"
+	category = QUIRK_CATEGORY_LANGUAGE_QUIRKS
 	mechanics = "You can speak the pokemon langage, or at least understand it. Maybe you really are the very best."
 	conflicts = list()
 	gain_text = span_notice("You remember how to speak to pokemon.")
@@ -480,7 +482,8 @@
 	name = "ERP Receptive"
 	desc = "Your character, for whatever reason, is PASSIVELY seeking out attention from those who match your OOC Prefences. Remember to set your OOC notes!"
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "This trait is a flag for people who have ERP seeking to know that you, right now, are seeking ERP. It's a simple concept, if you just have this quirk you are not going out of our way to look for it, but if it stumbles into your lap well that'd be fine, right?"
 	conflicts = list()
 	mob_trait = TRAIT_IN_HEAT
@@ -490,7 +493,7 @@
 	name = "ERP Seeking"
 	desc = "Your character, for whatever reason, is ACTIVELY seeking out attention from those who match your OOC Preferences. Remember to check peoples OOC notes!"
 	value = 0
-	category = "Perceptive Quirks"
+	category = QUIRK_CATEGORY_PERCEPTIVE_QUIRKS
 	mechanics = "This Quirk allows you to see other players ERP related quirks when you examine them. Letting you know, at a glance, some of their prefs if they have them set."
 	conflicts = list()
 	mob_trait = TRAIT_HEAT_DETECT
@@ -500,7 +503,7 @@
 	name = "OOCly Shy"
 	desc = "You, and likely your character, are a bit shy. This is a fine thing to be, but letting people know this way will let them know you do want to be included in social situations when its feasible. Basically just top bait though, lets be real."
 	value = 0
-	category = "OOC Quirks"
+	category = QUIRK_CATEGORY_OOC_QUIRKS
 	mechanics = "The description should be fairly clear, but to reiterate this quirk exists as an OOC flag to let everyone know that you have some sort of social issue that makes it hard for you to approach others. If anyone dares to give you problems about taking this please alert staff immediatly, we will eat their legs off."
 	conflicts = list()
 	mob_trait = TRAIT_SHY
@@ -512,7 +515,8 @@
 		may not engage or bait others into trying to PVP with you. While you don't need this quirk to opt out of PVP, it does help set this \
 		preference for you by default. You can toggle this on or off at any time by using *nopvp."
 	value = 0
-	category = "OOC Quirks"
+	category = QUIRK_CATEGORY_OOC_QUIRKS
+	disabled = TRUE
 	mechanics = "Your examine text will let others know that you're not interested in PVP engagements."
 	conflicts = list(
 		/datum/quirk/pvpfocus,
@@ -530,7 +534,8 @@
 		Keep in mind that players can opt out of PVP, either through saying so through LOOC, having the PVP Opt Out quirk, or by using *nopvp. \
 		If a player has opted out of PVP, you should respect their wishes and not engage in PVP with them."
 	value = 0
-	category = "OOC Quirks"
+	category = QUIRK_CATEGORY_OOC_QUIRKS
+	disabled = TRUE
 	mechanics = "Your examine text will let others know that you're open for PVP engagements."
 	conflicts = list()
 	mob_trait = TRAIT_PVPFOC
@@ -544,7 +549,8 @@
 	name = "L/OOC Approach"
 	desc = "You prefer to be approached for Roleplay (Erotic or otherwise) via LOOC/OOC first to help work out a plan for scenes and ideas so that the experiences are a bit more tailored."
 	value = 0
-	category = "OOC Quirks"
+	category = QUIRK_CATEGORY_OOC_QUIRKS
+	disabled = TRUE
 	mechanics = "This quirk should be helpful also for people who like to plan scenes ahead of time. It's a well known fact of SS13 that time always runs short when roleplay is happening and hopefully this can help alleviate that via planning."
 	conflicts = list()
 	mob_trait = TRAIT_OOCAPP
@@ -554,7 +560,7 @@
 // 	name = "PVP/PVE Accepting"
 // 	desc = "You are down for PVP & PVE Scenarios.  The wastes are violent, and you are down bad for Miss Violencia. Be it PVP or PVE this quirk lets others know you're ready to R U M B L E."
 // 	value = 0
-// 	category = "OOC Quirks"
+// 	category = QUIRK_CATEGORY_OOC_QUIRKS
 // 	mechanics = "Yeah, you're just violent and quirky. We get it."
 // 	conflicts = list()
 // 	mob_trait = TRAIT_COMBATSWITCH
@@ -564,7 +570,7 @@
 	name = "Scoopable!"
 	desc = "Maybe you're really smol, maybe you're just really light, maybe you're *really* into yoga. However it is, carrying you around is just pretty dang easy."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You can be picked up by others with as simple as an alt + click. Careful, they can stuff you in some vending machines too. Yikes."
 	conflicts = list()
 	mob_trait = TRAIT_SMOL
@@ -585,7 +591,7 @@
 	name = "A cat!"
 	desc = "You identify as a cat! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the cat phobia, amazing."
 	conflicts = list()
 	mob_trait = TRAIT_CAT
@@ -595,7 +601,7 @@
 	name = "A rat!"
 	desc = "You identify as a rat! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the cat phobia, stellar."
 	conflicts = list()
 	mob_trait = TRAIT_RAT
@@ -605,7 +611,7 @@
 	name = "A spider!"
 	desc = "You identify as a spider! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the spider phobia, tubular."
 	conflicts = list()
 	mob_trait = TRAIT_SPIDER
@@ -615,7 +621,7 @@
 	name = "A lizard or reptillian!"
 	desc = "You identify as a lizard/reptillian! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the lizard phobia, choice."
 	conflicts = list()
 	mob_trait = TRAIT_LIZARD
@@ -625,7 +631,7 @@
 	name = "A robot/synth!"
 	desc = "You identify as a robot/synth! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the robot phobia, radical."
 	conflicts = list()
 	mob_trait = TRAIT_ROBOT
@@ -635,7 +641,7 @@
 	name = "A bird!"
 	desc = "You identify as a bird! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the bird phobia, magical."
 	conflicts = list()
 	mob_trait = TRAIT_BIRD
@@ -645,7 +651,7 @@
 	name = "A dog!"
 	desc = "You identify as a dog! (Mostly to help identify your species mechanically)"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the dog phobia, dastardly."
 	conflicts = list()
 	mob_trait = TRAIT_DOG
@@ -655,7 +661,7 @@
 	name = "An alien!"
 	desc = "You identify as some manner of wierd, uncanny alien! Maybe you're a xenomorph, youre a grey skinned big headded creature, or you're just otherwise otherworldly!"
 	value = 0
-	category = "Identification Quirks"
+	category = QUIRK_CATEGORY_IDENTIFICATION_QUIRKS
 	mechanics = "You trigger the alien phobia."
 	conflicts = list()
 	mob_trait = TRAIT_ALIEN
@@ -666,7 +672,7 @@
 	name = "Photographer"
 	desc = "You carry your camera and personal photo album everywhere you go, and your scrapbooks are legendary among your coworkers."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Like it says, camera and photo album. The album saves between rounds for you to remember all those good times with. Or cry in six months when you come back and see it again."
 	conflicts = list(
 		/datum/quirk/luddite, // fucer'll steal your soul
@@ -696,7 +702,7 @@
 	name = "Journalist"
 	desc = "You carry yourself a pen and a personal folder around, you are known to be the one who records everything."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Yeah, you get a bunch of junk. Cool thing though, alt click the pen and you can rename stuff. See if you can sell someone a deed to Nash, I double dog dare you."
 	conflicts = list() // you can be an illiterate journalist
 	mob_trait = TRAIT_JOURNALIST
@@ -719,7 +725,7 @@
 // 	name = "Innate healing - Saliva"
 // 	desc = "You got that dog in you, your licks straight up heal the wounded. Somehow. Don't think about it too hard."
 // 	value = 0
-// 	category = "Healer Quirks"
+// 	category = QUIRK_CATEGORY_HEALER_QUIRKS
 // 	mechanics = "You can pull out your tongue with *lick and use it to heal wounds on folks. Drink water to regain uses faster. Just remember that some people do not like being licked to be healed."
 // 	conflicts = list()
 // 	mob_trait = TRAIT_HEAL_TONGUE
@@ -732,7 +738,7 @@
 // 	name = "Innate healing - Magic"
 // 	desc = "By the Nine- Wait, wrong game. One way or another you can lay on hands."
 // 	value = 0
-// 	category = "Healer Quirks"
+// 	category = QUIRK_CATEGORY_HEALER_QUIRKS
 // 	mechanics = "Your touch has a mild healing effect on burns and bruises. Use *touch to soothe the injuries of yourself or others. Drinking water helps recover from the fatigue of using the spell faster."
 // 	conflicts = list()
 // 	mob_trait = TRAIT_HEAL_TOUCH
@@ -745,7 +751,7 @@
 // 	name = "Innate healing - Triage"
 // 	desc = "You keep a tiny kit of medical supplies stashed away for emergencies."
 // 	value = 0
-// 	category = "Healer Quirks"
+// 	category = QUIRK_CATEGORY_HEALER_QUIRKS
 // 	mechanics = "Use *tend to treat the injuries of yourself or others. Drinking water helps recover your focus."
 // 	conflicts = list()
 // 	mob_trait = TRAIT_HEAL_TEND
@@ -760,7 +766,7 @@
 	name = "Roleplay Seeking"
 	desc = "You are actively seeking out people who also are seeking roleplay that isn't necessarily erotic in nature. With this you will be able to see the other Roleplay related quirks on others."
 	value = 0
-	category = "Perceptive Quirks"
+	category = QUIRK_CATEGORY_PERCEPTIVE_QUIRKS
 	mechanics = "This quirk lets you see other peoples roleplay related traits, pretty simple."
 	conflicts = list()
 	mob_trait = TRAIT_RPFOCUSED
@@ -770,7 +776,7 @@
 	name = "Roleplay Seeking - Long Term Focus"
 	desc = "You are seeking out people to have more than one rounds worth of interaction with.  Maybe on the regular if your real world schedules allow it."
 	value = 0
-	category = "Roleplay Quirks"
+	category = QUIRK_CATEGORY_ROLEPLAY_QUIRKS
 	mechanics = "Consider passing each other your discords, or something similar. Make a little long term group!  We'd love to see it!"
 	conflicts = list()
 	mob_trait = TRAIT_RPLONGTERM
@@ -780,7 +786,7 @@
 	name = "Roleplay Seeking - Short Term Focus"
 	desc = "You are seeking out people to have occasional interaction with. Pick this if you want more casual quicker roleplay, instead of something that likely needs OOC planning between those involved."
 	value = 0
-	category = "Roleplay Quirks"
+	category = QUIRK_CATEGORY_ROLEPLAY_QUIRKS
 	mechanics = "Grab and go, go gettem y'all!"
 	conflicts = list()
 	mob_trait = TRAIT_RPSHORTTERM
@@ -790,7 +796,7 @@
 	name = "Roleplay Seeking - Serious Roleplay"
 	desc = "You are seeking out 'Serious' Roleplay with others. This includes things like taking threats realistically and generally really digging into the setting to create believable, and not terribly wacky, situations."
 	value = 0
-	category = "Roleplay Quirks"
+	category = QUIRK_CATEGORY_ROLEPLAY_QUIRKS
 	mechanics = "For more clarification, when we say 'serious' we're implying what some players may know to some degree as a 'higher' roleplay level. Think serious cop drama."
 	conflicts = list()
 	mob_trait = TRAIT_RPSERIOUS
@@ -800,7 +806,7 @@
 	name = "Roleplay Seeking - Light Roleplay"
 	desc = "You are seeing out 'Light' Roleplay with others.  This includes things like generally playing into the wackyness of the game overall.  While we do ask you not to break the 4th wall (too often, anyway) this means you're seeking more silly interactions generally."
 	value = 0
-	category = "Roleplay Quirks"
+	category = QUIRK_CATEGORY_ROLEPLAY_QUIRKS
 	mechanics = "For more clarification, when we say 'light' we're implying what some players may know to some degree as a 'lower' roleplay level. Think goofy and lighthearted."
 	conflicts = list()
 	mob_trait = TRAIT_RPLIGHT
@@ -810,7 +816,7 @@
 	name = "Roleplay Seeking - Dramatic Roleplay"
 	desc = "You are seeking out interactions with others that are perhaps a bit overdramatic. Scandalous, gossiping, overly sad or emotional scenes. Think Days of Our Lives, or any Soap Opera. This is not a way around the OOC Drama rule, but it does mean you're seeking IC Drama roleplay!"
 	value = 0
-	category = "Roleplay Quirks"
+	category = QUIRK_CATEGORY_ROLEPLAY_QUIRKS
 	mechanics = "For more clarification, when we say 'dramatic' we mean spicier topics. These dramatic moments should also be careful to be kept in IC spaces, remember your IC/OOC barrier peeps."
 	conflicts = list()
 	mob_trait = TRAIT_RPDAYSOFOURLIVES
@@ -820,7 +826,7 @@
 	name = "Roleplay Seeking - Medical Roleplay"
 	desc = "You are seeking out interactions with players that are medical related.  This includes roleplaying treating wounds, or maybe even roleplaying treating them poorly."
 	value = 0
-	category = "Roleplay Quirks"
+	category = QUIRK_CATEGORY_ROLEPLAY_QUIRKS
 	mechanics = "For more clarification, when we say 'medical' we don't mean roleplaying out adding every bandage but maybe give this person a little bit more to work with than wandering in and out of medbay like a stooge."
 	conflicts = list()
 	mob_trait = TRAIT_RPSCRUBS
@@ -832,7 +838,8 @@
 	name = "ERP Seeking - Prefers Guys"
 	desc = "When it comes to picking who to kiss, you choose boys. Boykisser."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "For people who like both but have a lean consider taking this with the anyone kisser quirk."
 	conflicts = list()
 	mob_trait = TRAIT_ERPBOYKISSER
@@ -842,7 +849,8 @@
 	name = "ERP Seeking - Prefers Girls"
 	desc = "When it comes to picking who to kiss, you choose girls.  Girlkisser."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "For people who like both but have a lean consider taking this with the anyone kisser quirk."
 	conflicts = list()
 	mob_trait = TRAIT_ERPGIRLKISSER
@@ -852,7 +860,8 @@
 	name = "ERP Seeking - Prefers Anyone"
 	desc = "When it comes to picking who to kiss you'll kiss em' all."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "For those with a lean towards boys or girls consider taking the quirks for them with this to show that interest."
 	conflicts = list()
 	mob_trait = TRAIT_ERPANYKISSER
@@ -862,7 +871,8 @@
 	name = "ERP Seeking - Relationships - Short Term"
 	desc = "You're a flinger, swing, floozy, harlot or a harem anime protagonist. You prefer your partners to come and go, and the spice of life is variety."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Party like its 6969, bro."
 	conflicts = list()
 	mob_trait = TRAIT_ERPQUICKY
@@ -872,7 +882,8 @@
 	name = "ERP Seeking - Relationships - Long Term"
 	desc = "A waifu or husbando, you probably don't care much which term is used but you want one partner, and to generally stick to them."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "If you really liked it you shoulda put a ring on it."
 	conflicts = list()
 	mob_trait = TRAIT_ERPLONGTERM
@@ -882,7 +893,8 @@
 	name = "ERP Seeking - I am a Bottom"
 	desc = "You're a bottom. Be you shy, bratty, or somewhere in between. You prefer to be approached and woo'd over doing the approaching (lets be real, that's scary!)"
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "More like Buwudy quirks, am I right?"
 	conflicts = list()
 	mob_trait = TRAIT_ERPBOTTOM
@@ -892,7 +904,8 @@
 	name = "ERP Seeking - I am a Top"
 	desc = "Cruel or gentle, you're the one that likes to do the approaching and picking from the options at hand."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Go get em, cowboy. There's a lot of em', I promise."
 	conflicts = list()
 	mob_trait = TRAIT_ERPTOP
@@ -902,7 +915,8 @@
 	name = "ERP Seeking - I am a Switch"
 	desc = "There's two sides to your coin, you don't mind being approached or doing the approaching. Just as long as someone gets touched."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "If you lean a specific direction maybe take it to."
 	conflicts = list()
 	mob_trait = TRAIT_ERPSWITCH
@@ -912,7 +926,8 @@
 	name = "ERP Seeking - Flirty"
 	desc = "More of a guideline, you enjoy using the *flirt system built into our say verbs, or enjoy having them used on you. It really can clarify how people feel, after all."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "We understand that the *help verb is a mess right now, but this is a sign to others that using the *flirt related verbs on you is a GREAT way to get your attention."
 	conflicts = list()
 	mob_trait = TRAIT_ERPFLIRTY
@@ -925,7 +940,7 @@
 	name = "Adventure Seeking"
 	desc = "You keep an eye out for the type of person who sees this swampy wasteland as a way to grow famous and rich.  Preferably both."
 	value = 0
-	category = "Perceptive Quirks"
+	category = QUIRK_CATEGORY_PERCEPTIVE_QUIRKS
 	mechanics = "This is a flag quirk that lets you see what other peoples builds are for going out and doing adventure, letting you more easily build your groups strenghths up and check weaknesses."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_SEEKER
@@ -935,7 +950,7 @@
 	name = "Adventurer"
 	desc = "You are one of those people who go about in search of what was in hopes of making what is bigger and better. Or maybe you just focus on making money. It's your call."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "You're really always on call for a wild time. Wanna go kill some robots later?"
 	conflicts = list()
 	mob_trait = TRAIT_ADV_ER
@@ -945,7 +960,7 @@
 	name = "Adventurer - Looking for Group"
 	desc = "The wasteland calls to you, and you hope that others hear its call as well. As such, you prefer to explore with a friend, or maybe even friends."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "This is the flag to tell others that you are really down for going out at any time!"
 	conflicts = list()
 	mob_trait = TRAIT_ADV_LFG
@@ -955,7 +970,7 @@
 	name = "Adventurer - Not Looking for Group"
 	desc = "The wasteland calls to you, and you're your own ride and die. No need to bring others along in your book."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "This is the flag to tell others that you aren't really looking for adventure today."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_SOLO
@@ -965,7 +980,7 @@
 	name = "Adventurer - Class: Gunner"
 	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Gunner at heart. Be it long gun, smg, or even black powder you're happiest with slinging lead, arrows, rocks, or the like. Generally staying somewhat back from combat."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "Not a skygunner though, no airplanes around here. Yet."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_GUNNER
@@ -975,7 +990,7 @@
 	name = "Adventurer - Class: Fighter"
 	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Fighter at heart. Using Melee weapons, though not usually a shield, you can do a good job of keeping critters away from friends and probably do decent damage."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "No, you don't get an extra 'feat' for taking this."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_FIGHTER
@@ -985,7 +1000,7 @@
 	name = "Adventurer - Class: Tank"
 	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Tank at heart. What matters most to you is your shield, and ability to block monsters from getting past you as best you can, while others do the real damage."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "No promises about your team actually using you as a shield, you know how it is man."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_TANK
@@ -995,7 +1010,7 @@
 	name = "Adventurer - Class: Bruiser"
 	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Bruiser at heart. Two handed weapons are your jam (and jam smasher, for that matter.) With little focus on keeping yourself, or others, safe. Which means you can focus on smashing things as fast as possible."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "Bruise em', smash em', stick em' in a stew."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_BRUISER
@@ -1005,7 +1020,7 @@
 	name = "Adventurer - Class: Rogue"
 	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Rogue at heart. Carrying tools and offering options that the other classes may not consider. Like lockpicks, or EMP grenades. This lets others know you're focused on playing smarter, not harder."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "If you pray for extra backstab damage I promise I'll only smite you three times. ~Fenny"
 	conflicts = list()
 	mob_trait = TRAIT_ADV_ROGUE
@@ -1015,7 +1030,7 @@
 	name = "Adventurer - Class: Healer"
 	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Healer at heart. Be it with consumables or the innate healing quirks this tag lets others know you're focused on keeping them up and in the fight. That doesn't mean you can't defend yourself though."
 	value = 0
-	category = "Adventure Quirks"
+	category = QUIRK_CATEGORY_ADVENTURE_QUIRKS
 	mechanics = "Doesn't actually require you to take the quirk for being a bottom, believe it or not."
 	conflicts = list()
 	mob_trait = TRAIT_ADV_HEALER
@@ -1025,7 +1040,7 @@
 	name = "Distinct"
 	desc = "Whether you've got horns, wings, a big ass tail, or maybe just your general vibe, something about you cannot be concealed"
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Face coverings will not hide your identity from others, including flavor text and species"
 	conflicts = list()
 	mob_trait = TRAIT_NOHIDEFACE
@@ -1044,7 +1059,7 @@
 	name = "Big Boobs"
 	desc = "If the internet was a thing, people would be looking you up on google."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mob_trait = TRAIT_BIGBOOBS
 	mechanics = "You need to fix the fit of your clothes every once in a while, or your breathing will be restricted and you'll take a tiny bit of suffocation damage."
 	conflicts = list()
@@ -1145,7 +1160,7 @@
 	desc = "You have a hard time finding clothes that fit."
 	value = 0
 	mob_trait = TRAIT_BIGBALLS
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "You need to fix the fit of your clothes every once in a while, or you'll suffer a speed penalty."
 	conflicts = list()
 	gain_text = span_notice("The heavy swingers between your legs strain your clothes.")
@@ -1186,7 +1201,7 @@
 	desc = "You have a HARD time finding clothes that fit."
 	value = 0
 	mob_trait = TRAIT_BIGWEENIE
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "You need to fix the fit of your clothes every once in a while, or your clothes will be too tight to reach into your pockets."
 	conflicts = list()
 	gain_text = span_notice("You feel your clothes stretch around your extra leg.")
@@ -1229,7 +1244,7 @@
 	desc = "You have a hard time getting your clothes on."
 	value = 0
 	mob_trait = TRAIT_BIGBUTT
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
 	mechanics = "You need to fix the fit of your clothes every once in a while, or they'll become uncomfortable."
 	conflicts = list()
 	gain_text = span_notice("You feel your lower body being compressed by your clothes.")
@@ -1269,7 +1284,8 @@
 	name = "No ERP"
 	desc = "You do not want to be a part of erotic roleplay, and that's fine!"
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1281,7 +1297,8 @@
 	name = "Vanilla ERP"
 	desc = "Your ERP preferences are pretty vanilla. Nothing too crazy most of the time."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1293,7 +1310,8 @@
 	name = "Rough ERP"
 	desc = "Your ERP preferences lean towards a bit of roughness, be that choking or something else."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1305,7 +1323,8 @@
 	name = "Extreme ERP"
 	desc = "Your ERP preferences lean a bit past the rough, yo' ass straight up kinky."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1318,7 +1337,8 @@
 	name = "Snuggly ERP/RP"
 	desc = "You just really love a snuggly comfy scene, it doesn't even have to be lewd."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1330,7 +1350,8 @@
 	name = "Breeding ERP/RP"
 	desc = "Be you the pied or the piper you have a preference for lewdness that ends with at least the risk of making babies."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1342,7 +1363,8 @@
 	name = "Feral ERP"
 	desc = "Your ERP partner preferences include things that need to pass a harkness test."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1354,7 +1376,8 @@
 	name = "Robot ERP"
 	desc = "Your ERP partner preferences include your own personal computer and other varied electronic things."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1366,7 +1389,8 @@
 	name = "Vore ERP"
 	desc = "Your ERP partner preferences include pals that eat entire people, or those that want to be eaten."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1378,7 +1402,8 @@
 	name = "Fat ERP"
 	desc = "Your ERP partner preferences include the thick and the jiggly, be you one of them or hoping to find one."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)
@@ -1390,7 +1415,8 @@
 	name = "Feeder ERP"
 	desc = "Your ERP partner preferences include being stuffed full of food, or doing the stuffing."
 	value = 0
-	category = "Bawdy Quirks"
+	category = QUIRK_CATEGORY_BAWDY_QUIRKS
+	disabled = TRUE
 	mechanics = "Shows your prefs in examine."
 	conflicts = list(
 	)

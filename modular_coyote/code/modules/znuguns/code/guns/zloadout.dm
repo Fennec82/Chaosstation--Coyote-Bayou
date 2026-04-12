@@ -530,7 +530,10 @@
 /datum/gear/utility/tier4/stealthboy
 	name = "Stealth Module"
 	path = /obj/item/stealthboy
-	
+
+/datum/gear/utility/tier0/flashdark
+	name = "Flash DARK"
+	path = /obj/item/flashlight/flashdark
 
 // TIER 1 STUFF //
 

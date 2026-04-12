@@ -73,7 +73,7 @@
 		// yeah, show_radial_menu calls look messy. I know.
 		var/choice = show_radial_menu(
 			user,
-			src,
+			user,
 			list(
 				"low" = image(icon = 'icons/misc/mark.dmi', icon_state = "b1"),
 				"medium" = image(icon = 'icons/misc/mark.dmi', icon_state = "b2"),
@@ -81,7 +81,7 @@
 				"performance" = image(icon = 'icons/misc/mark.dmi', icon_state = "X"),
 			),
 			"huntinghornradial",
-			CALLBACK(src, PROC_REF(radial_check), user),
+			CALLBACK(user, PROC_REF(radial_check), user),
 			radius = 42,
 			require_near = TRUE,
 			tooltips = TRUE,

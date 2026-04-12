@@ -13,7 +13,7 @@
 	name = "Clam Licker"
 	desc = "Through some sort of adaptation to a questionable seafood diet, your tongue is specially shaped for yoinking the meat out of various bivalves (clams, oysters, etc)."
 	value = 5
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You can *lick clams to extract their meat and eat it, like some kind of wierd bird rat."
 	conflicts = list(
 		/datum/quirk/no_taste,
@@ -30,7 +30,7 @@
 	name = "Clam Lover"
 	desc = "You really, really *really* like clams."
 	value = 7
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Clam meat and juice gives you a significant mood boost!"
 	conflicts = list(
 		/datum/quirk/no_taste,
@@ -47,7 +47,7 @@
 	name = "Clam Fisher"
 	desc = "You're a master at fishing for clams! You're so good in fact that you can just jab your hand into the water and snag em!"
 	value = 7
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You can click on water tiles to fish for clams with your bare hands. Otherwise, clam fishing takes around 5 seconds, and has a chance of failing!"
 	mob_trait = TRAIT_CLAM_FISHER
 	gain_text = span_notice("Zhere isn't a clam alive zhat can escape your grazhp!")
@@ -58,7 +58,7 @@
 	name = "Clam Life"
 	desc = "You're a lean, mean, clam-eating machine! Your body is specially adapted to yoink clams out of the filthy sand, lick em right out of the shell, and love every moment of it!"
 	value = 13
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Combines the effects of Clam Tongue, Clam Lover, and Clam Fisher quirks."
 	conflicts = list(
 		/datum/quirk/no_taste,

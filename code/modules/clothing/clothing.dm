@@ -82,13 +82,16 @@
 	if(length(armor_tokens) < 1)
 		return // all done!
 	
+	if (!islist(armor))
+		return // if it doesn't even have an armor datum, don't try to apply tokens to it
+	var/list/armorlist = armor
 	for(var/list/token in armor_tokens)
 		for(var/modifier in token)
 			switch(GLOB.armor_token_operation_legend[modifier])
 				if("MULT")
-					armor[modifier] = round(armor[modifier] * token[modifier], 1)
+					armorlist[modifier] = round(armorlist[modifier] * token[modifier], 1)
 				if("ADD")
-					armor[modifier] = max(armor[modifier] + token[modifier], 0)
+					armorlist[modifier] = max(armorlist[modifier] + token[modifier], 0)
 				else
 					continue
 

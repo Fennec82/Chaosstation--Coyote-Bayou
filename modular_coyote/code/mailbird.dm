@@ -68,7 +68,7 @@
 	icon = 'modular_coyote/icons/mob/bird.dmi'
 	icon_state = "crow-glide"
 	alpha = 0
-	var/mob/living/carbon/caller
+	var/mob/living/carbon/cawller
 	var/atom/movable/following
 	var/datum/component/mailbird_movement/component
 	var/TargetName
@@ -76,7 +76,7 @@
 
 /obj/effect/mailbird/Initialize(mapload, mob/living/carbon/C)
 	. = ..()
-	caller = C
+	cawller = C
 	following = C
 	component = src.AddComponent(/datum/component/mailbird_movement, C)
 	var/delayRespond = rand(2,4) SECONDS
@@ -104,7 +104,7 @@
 	alpha = 0
 
 	var/obj/item/reagent_containers/food/snacks/grown/pinyon/nut
-	var/mob/living/carbon/human/C = caller
+	var/mob/living/carbon/human/C = cawller
 
 	for(var/obj/item/reagent_containers/food/snacks/grown/pinyon/P in C.held_items)
 		nut = P
@@ -167,7 +167,7 @@
 
 	var/success = FALSE
 	if(!istype(C))
-		following = caller
+		following = cawller
 	else
 		following = C
 		success = TRUE

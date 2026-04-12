@@ -263,7 +263,8 @@ GLOBAL_LIST_EMPTY(playmob_cooldowns)
 	/// WARNING: DUPLICATED CODE, MAKE BETTER
 	setup_mob_armor_values()
 	if (islist(mob_armor))
-		mob_armor = getArmor(arglist(mob_armor))
+		var/list/armor_list = mob_armor
+		mob_armor = getArmorFromList(armor_list)
 	else if (!mob_armor)
 		mob_armor = getArmor()
 	else if (!istype(mob_armor, /datum/armor))
@@ -1491,14 +1492,14 @@ GLOBAL_LIST_EMPTY(playmob_cooldowns)
 		return
 	if(length(mob_armor_tokens) < 1)
 		return // all done!
-	
+	var/list/armorlist = mob_armor
 	for(var/list/token in mob_armor_tokens)
 		for(var/modifier in token)
 			switch(GLOB.armor_token_operation_legend[modifier])
 				if("MULT")
-					mob_armor[modifier] = round(mob_armor[modifier] * token[modifier], 1)
+					armorlist[modifier] = round(armorlist[modifier] * token[modifier], 1)
 				if("ADD")
-					mob_armor[modifier] = max(mob_armor[modifier] + token[modifier], 0)
+					armorlist[modifier] = max(armorlist[modifier] + token[modifier], 0)
 				else
 					continue
 

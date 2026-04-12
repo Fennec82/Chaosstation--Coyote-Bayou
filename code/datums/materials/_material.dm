@@ -87,7 +87,7 @@ Simple datum which is instanced once per type and is used for every object of sa
 
 		for(var/i in current_armor)
 			temp_armor_list[i] = current_armor[i] * armor_modifiers[i]
-		o.armor = getArmor(arglist(temp_armor_list))
+		o.armor = getArmorFromList(temp_armor_list)
 	if(!isitem(o))
 		return
 	var/obj/item/I = o

@@ -1,14 +1,16 @@
 //Tiers of loot
 ///Trash tier
-#define LOOT_TIER_LOWEST 1
+#define LOOT_TIER_LOWEST "1"
 ///Common tier
-#define LOOT_TIER_LOW 2
+#define LOOT_TIER_LOW "2"
 ///Uncommon tier
-#define LOOT_TIER_MID 3
+#define LOOT_TIER_MID "3"
 ///Rare tier
-#define LOOT_TIER_HIGH 4
+#define LOOT_TIER_HIGH "4"
 ///Very Rare tier
-#define LOOT_TIER_HIGHEST 5
+#define LOOT_TIER_HIGHEST "5"
+
+#define LOOT_TIER_LIST list(LOOT_TIER_LOWEST, LOOT_TIER_LOW, LOOT_TIER_MID, LOOT_TIER_HIGH, LOOT_TIER_HIGHEST)
 
 
 //Types of loot
@@ -369,5 +371,5 @@ GLOBAL_LIST_INIT(lootable_types, list(
 
 /obj/structure/lootable/hidden_stash/Initialize(mapload)
 	if(randomize_loot_tier)
-		loot_tier = rand(LOOT_TIER_LOWEST, LOOT_TIER_HIGHEST)
+		loot_tier = pick(LOOT_TIER_LIST)
 	. = ..()

@@ -2997,23 +2997,29 @@
 			if(response.body == "[]")
 				dat += "<center><b>0 bans detected for [ckey]</b></center>"
 			else
-				bans = json_decode(response["body"])
-				dat += "<center><b>[bans.len] ban\s detected for [ckey]</b></center>"
-				for(var/list/ban in bans)
-					dat += "<b>Server: </b> [sanitize(ban["sourceName"])]<br>"
-					dat += "<b>RP Level: </b> [sanitize(ban["sourceRoleplayLevel"])]<br>"
-					dat += "<b>Type: </b> [sanitize(ban["type"])]<br>"
-					dat += "<b>Banned By: </b> [sanitize(ban["bannedBy"])]<br>"
-					dat += "<b>Reason: </b> [sanitize(ban["reason"])]<br>"
-					dat += "<b>Datetime: </b> [sanitize(ban["bannedOn"])]<br>"
-					var/expiration = ban["expires"]
-					dat += "<b>Expires: </b> [expiration ? "[sanitize(expiration)]" : "Permanent"]<br>"
-					if(ban["type"] == "job")
-						dat += "<b>Jobs: </b> "
-						var/list/jobs = ban["jobs"]
-						dat += sanitize(jobs.Join(", "))
-						dat += "<br>"
-					dat += "<hr>"
+				bans = json_decode(response.body)
+				if(!islist(bans))
+					dat += "<br>Invalid response from CentCom."
+				else
+					var/list/bans_list = bans
+					dat += "<center><b>[bans_list.len] ban\s detected for [ckey]</b></center>"
+					for(var/list/ban in bans_list)
+						if(!islist(ban))
+							continue
+						dat += "<b>Server: </b> [sanitize(ban["sourceName"])]<br>"
+						dat += "<b>RP Level: </b> [sanitize(ban["sourceRoleplayLevel"])]<br>"
+						dat += "<b>Type: </b> [sanitize(ban["type"])]<br>"
+						dat += "<b>Banned By: </b> [sanitize(ban["bannedBy"])]<br>"
+						dat += "<b>Reason: </b> [sanitize(ban["reason"])]<br>"
+						dat += "<b>Datetime: </b> [sanitize(ban["bannedOn"])]<br>"
+						var/expiration = ban["expires"]
+						dat += "<b>Expires: </b> [expiration ? "[sanitize(expiration)]" : "Permanent"]<br>"
+						if(ban["type"] == "job")
+							dat += "<b>Jobs: </b> "
+							var/list/jobs = ban["jobs"]
+							dat += sanitize(jobs.Join(", "))
+							dat += "<br>"
+						dat += "<hr>"
 
 		dat += "<br></body>"
 		var/datum/browser/popup = new(usr, "centcomlookup-[ckey]", "<div align='center'>Central Command Galactic Ban Database</div>", 700, 600)

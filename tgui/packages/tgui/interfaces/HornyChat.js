@@ -284,17 +284,6 @@ const LowerRowBar = (props, context) => {
   return (
     <Stack fill>
       <Stack.Item shrink>
-        {/* It just links to an AI furry image algovomitorihtym thing */}
-        {/* Probably the one on Perchance, that one's yiffy as heck */}
-        <Button
-          fluid
-          icon="images"
-          content="Get Profile Pics"
-          onClick={() => act('OpenPerchance', {
-            UserCkey: UserCKEY,
-          })} />
-      </Stack.Item>
-      <Stack.Item shrink>
         {/* A link to catbox.moe, where you can upload your own images */}
         <Button
           fluid

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import shutil
-from collections import defaultdict
+from collections.abc import defaultdict
 from . import frontend
 from .dmm import *
 

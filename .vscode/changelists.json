@@ -1,0 +1,21 @@
+{
+  "changelists": [
+    {
+      "name": "Default",
+      "files": [
+        ".vscode/changelists.json",
+        "code/controllers/subsystem/processing/quirks.dm",
+        "code/datums/traits/_quirk.dm",
+        "code/__DEFINES/voreconstants.dm",
+        "code/datums/traits/clams.dm",
+        "code/datums/traits/good.dm",
+        "code/datums/traits/negative.dm",
+        "code/datums/traits/neutral.dm",
+        "code/controllers/subsystem/mapping.dm",
+        "code/modules/mob/living/say.dm",
+        "tgui/packages/tgui/interfaces/HornyChat.js"
+      ]
+    }
+  ],
+  "active": "Default"
+}

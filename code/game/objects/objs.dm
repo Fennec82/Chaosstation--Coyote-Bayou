@@ -53,13 +53,10 @@
 /obj/Initialize()
 	setup_armor_values()
 	if (islist(armor))
-		armor = getArmor(arglist(armor))
-	/*
-	else if (!armor)
+		armor = getArmorFromList(armor)
+	else
 		armor = getArmor()
-	else if (!istype(armor, /datum/armor))
-		stack_trace("Invalid type [armor.type] found in .armor during /obj Initialize()")
-	*/
+	
 	if(obj_integrity == null)
 		obj_integrity = max_integrity
 

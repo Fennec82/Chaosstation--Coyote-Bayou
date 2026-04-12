@@ -7,6 +7,50 @@ GLOBAL_LIST_INIT(armor_tierline, list(25, 50, 75, 100, 125, 150, 200, 250, 300, 
 	if (!.)
 		. = new /datum/armor(tier, linemelee, linebullet, linelaser, melee, bullet, laser, energy, bomb, bio, rad, fire, acid, magic, wound, damage_threshold)
 
+// okay arglist doesnt seem to work, so, heres a cool hack
+/proc/getArmorFromList(list/armor_input_list)
+	// sanitize input
+	if(!islist(armor_input_list))
+		return getArmor()
+	var/list/armorlist = list(
+		"tier" = 0,
+		"linemelee" = 0,
+		"linebullet" = 0,
+		"linelaser" = 0,
+		"melee" = 0,
+		"bullet" = 0,
+		"laser" = 0,
+		"energy" = 0,
+		"bomb" = 0,
+		"bio" = 0,
+		"rad" = 0,
+		"fire" = 0,
+		"acid" = 0,
+		"magic" = 0,
+		"wound" = 0,
+		"damage_threshold" = 0) // default values
+	for(var/varname in armorlist)
+		if(armor_input_list[varname])
+			armorlist[varname] = armor_input_list[varname]
+	if (!.)
+		. = getArmor(
+			armorlist["tier"],
+			armorlist["linemelee"],
+			armorlist["linebullet"],
+			armorlist["linelaser"],
+			armorlist["melee"],
+			armorlist["bullet"],
+			armorlist["laser"],
+			armorlist["energy"],
+			armorlist["bomb"],
+			armorlist["bio"],
+			armorlist["rad"],
+			armorlist["fire"],
+			armorlist["acid"],
+			armorlist["magic"],
+			armorlist["wound"],
+			armorlist["damage_threshold"])
+
 /datum/armor
 	datum_flags = DF_USE_TAG
 	var/tier  //1 to 11. Tier 1 - thin clothing, 2 - thick clothing , 3 - armored jackets, 4 - low quality/light armor, 5 - medium qual armor, 6 - medium high, 7 - high, 8 - exceptional/low qual PA, 9 - t45, 10 - t51, 11 - t60

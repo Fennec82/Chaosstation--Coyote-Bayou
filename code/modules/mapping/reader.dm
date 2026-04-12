@@ -422,8 +422,10 @@
 
 	var/first_turf_index = 1
 	if(LAZYLEN(members) && LAZYACCESS(members, first_turf_index))
-		while(!ispath(members[first_turf_index], /turf)) //find first /turf object in members
-			first_turf_index++
+		for(var/I in 1 to members.len)
+			if(ispath(members[I], /turf))
+				first_turf_index = I
+				break
 
 	//turn off base new Initialization until the whole thing is loaded
 	SSatoms.map_loader_begin()

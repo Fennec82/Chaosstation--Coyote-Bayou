@@ -21,13 +21,18 @@
 		upgrade_item = _upgrade_item
 	if(_added_armor)
 		if(islist(_added_armor))
-			added_armor = getArmor(arglist(_added_armor))
+			added_armor = getArmorFromList(_added_armor)
 		else if (istype(_added_armor, /datum/armor))
 			added_armor = _added_armor
 		else
 			stack_trace("Invalid type [_added_armor.type] passed as _armor_item argument to armorplate component")
 	else
-		added_armor = getArmor(arglist(added_armor))
+		if(islist(added_armor))
+			added_armor = getArmorFromList(added_armor)
+		else if (istype(added_armor, /datum/armor))
+			added_armor = added_armor
+		else
+			stack_trace("Invalid type [added_armor.type] defined for armorplate component")
 	var/obj/item/typecast = upgrade_item
 	upgrade_name = initial(typecast.name)
 

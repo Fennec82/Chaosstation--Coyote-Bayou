@@ -298,8 +298,7 @@ Works together with spawning an observer, noted above.
 	if (client && client.prefs && client.prefs.auto_ooc)
 		client.prefs.chat_toggles |= CHAT_OOC
 	transfer_ckey(ghost, FALSE)
-	if(!QDELETED(ghost))
-		ghost.client.init_verbs()
+	// Removed early init_verbs() call - verbs will be initialized after Login() in BYOND 516
 	if(penalize)
 		var/penalty = 3 MINUTES
 		var/roundstart_quit_limit = 3 MINUTES

@@ -142,7 +142,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Alcohol Tolerance"
 	desc = "You become drunk more slowly and suffer fewer drawbacks from alcohol."
 	value = 14
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Booze only delivers 70% of its alcohol power."
 	conflicts = list(/datum/quirk/alcohol_intolerance)
 	mob_trait = TRAIT_ALCOHOL_TOLERANCE
@@ -155,7 +155,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You eat people. Consuming human flesh doesn't bother you, and dishes such as longpork stew will heal you. Probably don't tell your neighbor. ((This is an OOC trait and should only be found out in character and not through technology.))"
 	mob_trait = TRAIT_LONGPORKLOVER
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Allows you to eat human flesh without being disgusted."
 	conflicts = list(/datum/quirk/vegetarian)
 	gain_text = span_notice("You have an insatiable hunger for the flesh of your fellow man.")
@@ -178,7 +178,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Former Tribal"
 	desc = "You used to be part of one of the tribes scattered throughout the wasteland. You may have some additional skills as a result. Allowing you to make some tribal medical supplies. Advanced tech still confuses you though."
 	value = 22
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Grants access to a wide variety of recipes and allows you to use primitive chemmasters with which you can make complex potions/poisons."
 	conflicts = list(
 		/datum/quirk/technophreak,
@@ -208,7 +208,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Apathetic"
 	desc = "You just don't care as much as other people. That's nice to have in a place like this, I guess."
 	value = 0
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "This trait forces your mood towards balance, it will make happiness and sadness last for shorter amounts of time as you return to neutral."
 	conflicts = list(
 		/datum/quirk/friendly,
@@ -238,7 +238,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Drunken Resilience"
 	desc = "Nothing like a good drink to make you feel on top of the world. Whenever you're drunk, you slowly recover from damage. Not wounds or bloodloss though."
 	value = 14
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "When drunk you slowly heal damage from all groups except wounds & bloodloss."
 	conflicts = list(/datum/quirk/alcohol_intolerance)
 	mob_trait = TRAIT_DRUNK_HEALING
@@ -250,7 +250,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Empath"
 	desc = "Whether it's a sixth sense or careful study of body language, it only takes you a quick glance at someone to understand how they feel. This lets you see their mood, damage, and intent. As well as seeing if they're experience oxyloss/toxloss and if they're in a high or low mood."
 	value = 0
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "You can read other peoples moods and see what intent they are in."
 	conflicts = list(/datum/quirk/apathetic)
 	mob_trait = TRAIT_EMPATH
@@ -262,7 +262,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Freerunning"
 	desc = "You're great at quick moves! You climb tables more quickly and land gracefully when falling from one floor up. You can also climb some walls!"
 	value = 32
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "Allows you to alt click on certain walls to climb up them quickly. There must not be a roof in the way, of course. You can also climb over tables faster."
 	conflicts = list(
 		/datum/quirk/slower,
@@ -280,7 +280,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Advanced Leaper"
 	desc = "You are able to leap long distances with ease."
 	value = 22
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You are able to jump long distances with throw enabled and an empty hand, though you can no longer tackle effectively."
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -308,7 +308,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Apex Leap"
 	desc = "You are able to leap medium distances with ease, as well as being able to tackle people down, most of the time"
 	value = 32
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You are able to jump medium distances with throw enabled and an empty hand, and effectively tackle others"
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -335,7 +335,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Friendly"
 	desc = "You give the best hugs. When you're in the right mood, your squeezes can cheer up those around you. Unless they don't, but that's okay. :)"
 	value = 14
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "Your hugs give a bonus mood boost on top of the normal boost from hugging."
 	conflicts = list(
 		/datum/quirk/apathetic,
@@ -353,7 +353,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Mood - Sanguine"
 	desc = "You sometimes just feel happy, for no reason at all. Gives mood buffs, occasionally."
 	value = 40
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "You have a small chance every game tick to gain a massive mood boost. This can effect speed, and even how hard it is to put you down in crit."
 	conflicts = list(
 		/datum/quirk/apathetic,
@@ -373,7 +373,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Mood - Optimist"
 	desc = "You sometimes just feel kind of happy, for no reason at all. Gives small mood buffs, occasionally."
 	value = 20
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "You have a small chance every game tick to gain a decent mood boost. This can effect speed, and even how hard it is to put you down in crit."
 	conflicts = list(
 		/datum/quirk/apathetic,
@@ -394,7 +394,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Light Step"
 	desc = "You walk with a gentle step; stepping on sharp objects is quieter, less painful and you won't leave footprints behind you."
 	value = 14
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You make less noise when stepping on glass. You still take damage without shoes though."
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -410,7 +410,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Speed Walker"
 	desc = "You walk with determined strides, and out-pace most people, at least, if you're both walking."
 	value = 20
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You move faster while walking than most do while jogging."
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -427,7 +427,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Treasure Hunter" //Used for digging up loot spawners, you can already do this with beastmaster rat, this just streamlines it
 	desc = "You are skilled at digging up resources from underground, requiring nothing but your bare hands, mouth, or a trusty shovel!" 
 	value = 22
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Allows you to craft loot spawners for free in the misc catagory, at the cost of time."
 	conflicts = list(
 
@@ -443,7 +443,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Musician"
 	desc = "You can tune instruments to play melodies that clear certain negative effects and can soothe the soul, you even get one of your instruments for free!"
 	value = 14
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You spawn with an instrument & tuner. If you use a tuned instrument then you apply a healing chem to those that hear it. Over time this healing chem can build up in thei system to create an even bigger healing effect. It even stacks with other musicians!"
 	conflicts = list(
 
@@ -471,7 +471,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Mage hand"
 	desc = "You gain the ability to use the magehand, a spell to manipulate things around you, and create sparkles!"
 	value = 32
-	category = "Magic Quirks"
+	category = QUIRK_CATEGORY_MAGIC_QUIRKS
 	mechanics = "You spawn with a DNA injector that grants you the magehand ability, be sure to inject it. Remember you cant grab anything bigger than small items!"
 	conflicts = list(
 
@@ -513,7 +513,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Self-Aware"
 	desc = "You know your body well, and can accurately assess the extent of your wounds. Sort of like being a medical scanner for yourself."
 	value = 14
-	category = "Emotional Quirks"
+	category = QUIRK_CATEGORY_EMOTIONAL_QUIRKS
 	mechanics = "You know, to the number, how much damage you've taken."
 	conflicts = list(
 
@@ -527,7 +527,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Skittish"
 	desc = "You are just the skittish sort. Tending to disappear when the lights turn on, or jumping when you hear a leaf crunch."
 	value = 14
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "With ctrl + shift + click you can hop into lockers, dumpsters, and trash cans. Good for if you hear footsteps and want to not be seen."
 	conflicts = list(
 
@@ -541,7 +541,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Spiritual"
 	desc = "You're in tune with the gods, and your prayers may be more likely to be heard. Or not."
 	value = 8
-	category = "Functional Quirks"
+	category = QUIRK_CATEGORY_FUNCTIONAL_QUIRKS
 	mechanics = "Your prayers trigger the same noise for admins that a preachers prayers would, meaning they're more likely to pay attention to them. That doesn't mean it will be positive attention though."
 	conflicts = list(
 
@@ -556,7 +556,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Tagger"
 	desc = "You're an experienced artist. Or, at least you know how to make every drop of paint count."
 	value = 0
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You get twice as many uses out of drawing supplies, like spray paint cans! Remember, we have a persistent painting system."
 	conflicts = list(
 
@@ -578,7 +578,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You're skilled at breaking down old-war rubble more precisely and therefor you gain more salvage from cars and piles than before. Your time with understanding complex technology also \
 	allows you to craft more complex machine parts."
 	value = 32
-	category = "Tech Quirks"
+	category = QUIRK_CATEGORY_TECH_QUIRKS
 	mechanics = "You gain 1 to 3 extra scrap from cars and other scrapping resources, with a +1 on top of all scrap as well. As well as gaining access to a decent list of fancy recipes for crafting, like energy weapon cells."
 	conflicts = list(
 		/datum/quirk/tribal,
@@ -617,7 +617,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Crafty"
 	desc = "You are able to craft without the necessities provided by a traditional workbench."
 	value = 25
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You do not need a workbench or alchemy table when crafting."
 	human_only = FALSE
 /datum/quirk/crafty/on_spawn()
@@ -629,7 +629,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Weaponsmith - Basic"
 	desc = "You know how to make various weapons, protective vests, gun mods, and can now forge weapons at an anvil. The list is too large to try and put here."
 	value = 14
-	category = "Crafting Quirks"
+	category = QUIRK_CATEGORY_CRAFTING_QUIRKS
 	mechanics = "You gain access to our weapon smithing system. A decent amount of recipes for things you can use, or sell!"
 	conflicts = list(
 
@@ -657,7 +657,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Weaponsmith - Masterwork"
 	desc = "Your smithed weapons now do extra damage. Requires Weaponsmith - Basic in order to benefit from!"
 	value = 28
-	category = "Crafting Quirks"
+	category = QUIRK_CATEGORY_CRAFTING_QUIRKS
 	mechanics = "You are a MASTER weapon smith, gaining access to the ability to craft masterwork weapons with our crafting system."
 	conflicts = list(
 
@@ -671,7 +671,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Bottomless Stomach"
 	desc = "Nothing gets between you and your food. You eat twice as fast as everyone else!"
 	value = 0
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "You never feel full! You can keep on eating, and eating, and eating... For better or worse."
 	conflicts = list()
 	mob_trait = TRAIT_VORACIOUS
@@ -683,7 +683,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Extra Blood"
 	desc = "You've a treated form of Polycythemia vera that increases the total blood volume inside of you as well as the rate of replenishment!"
 	value = 20 //I honeslty dunno if this is a good trait? I just means you use more of medbays blood and make janitors madder, but you also regen blood a lil faster.
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You blood ratio, and volume, are both higher than average. Meaning that you will survive blood loss wounds for longer, and more comfortably."
 	conflicts = list(
 		/datum/quirk/blooddeficiency,
@@ -705,7 +705,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Primitive Tech"
 	desc = "You're able to use primitive technology."
 	value = 14
-	category = "Tech Quirks"
+	category = QUIRK_CATEGORY_TECH_QUIRKS
 	mechanics = "You gain access to tribal chemmasters to make potions and poisons."
 	conflicts = list(
 
@@ -721,7 +721,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Dna Whiz"
 	desc = "You can sequence plant genomes with a snap of your fingers!"
 	value = 32
-	category = "Tech Quirks"
+	category = QUIRK_CATEGORY_TECH_QUIRKS
 	mechanics = "You can use plant dna machines, for one reason or another."
 	conflicts = list(
 		/datum/quirk/tribal,
@@ -738,7 +738,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Dark Vision - Minor"
 	desc = "You can see a small distance around you in full darkness compared to most people by two whole tiles."
 	value = 22
-	category = "Vision Quirks"
+	category = QUIRK_CATEGORY_VISION_QUIRKS
 	mechanics = "You can see two more tiles in the dark compared to others without a light source."
 	conflicts = list(
 		/datum/quirk/blindness,
@@ -760,7 +760,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Dark Vision - Greater"
 	desc = "You can see a much further distance in full darkness compared to most people by four more whole tiles."
 	value = 44
-	category = "Vision Quirks"
+	category = QUIRK_CATEGORY_VISION_QUIRKS
 	mechanics = "You can see four more tiles in the dark compared to others without a light source."
 	conflicts = list(
 		/datum/quirk/blindness,
@@ -785,7 +785,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 		So much so that your body has adapted to the sugars and artificial flavorings, processing those calories into healing energy. \
 		Won't do much for that waistline, though."
 	value = 22
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Various sodapop-derived drinks will provide (usually minor) healing, typically based on their complexity."
 	conflicts = list(
 		/datum/quirk/vegetarian,
@@ -820,7 +820,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Sleight of Hand"
 	desc = "You're really good with your hands. You can even conceal some objects on your person without them being found, kind of good."
 	value = 8
-	category = "Functional Quirks"
+	category = QUIRK_CATEGORY_FUNCTIONAL_QUIRKS
 	mechanics = "You have an innate, untraceable storage that can contain up to two normal sized items."
 	gain_text = span_notice("You feel like you could make a couple things... disappear!")
 	lose_text = span_warning("Your hands feel a little slower.")
@@ -845,7 +845,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Trapper"
 	desc = "As an experienced hunter and trapper you know your way around butchering animals for their products."
 	value = 14
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You get double the amount of usable materials when you butcher with a sharp object via harm intent."
 	conflicts = list(
 		/datum/quirk/nonviolent,
@@ -862,7 +862,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Melee - Big Leagues"
 	desc = "Swing for the fences! You deal even more additional damage with melee weapons."
 	value = 65
-	category = "Melee Quirks"
+	category = QUIRK_CATEGORY_MELEE_QUIRKS
 	mechanics = "You do an extra 25 damage with all melee attacks."
 	conflicts = list( //little leagues, and the negative quriks
 		/datum/quirk/nonviolent,
@@ -881,7 +881,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Melee - Little Leagues"
 	desc = "Swing for the outfield! You deal additional damage with melee weapons."
 	value = 32
-	category = "Melee Quirks"
+	category = QUIRK_CATEGORY_MELEE_QUIRKS
 	mechanics = "You do an extra 5 damage with all melee attacks."
 	conflicts = list(
 		/datum/quirk/nonviolent,
@@ -901,7 +901,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Chem Whiz"
 	desc = "You've been playing around with chemicals all your life. You know how to use chemistry machinery."
 	value = 32
-	category = "Crafting Quirks"
+	category = QUIRK_CATEGORY_CRAFTING_QUIRKS
 	mechanics = "You gain access to normal chemistry machines."
 	conflicts = list(
 		/datum/quirk/tribal,
@@ -933,7 +933,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Power Armor Crafting"
 	desc = "You've been around the wastes and have learned the wonders of crafting high tech armor from somewhere or something."
 	value = 32
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You can craft powerarmor, anyone can wear it though."
 	conflicts = list(
 		/datum/quirk/dumb,
@@ -951,7 +951,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Mobility - Faster"
 	desc = "You've spent a lot of time wandering the wastes, and for your hard work you out pace most folks when travelling across them."
 	value = 55
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You aren't slowed at all by going off roads or paths."
 	conflicts = list(
 		/datum/quirk/soft_yards,
@@ -970,7 +970,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You've spent some time in the wastes, and can move a bit better around them for it."
 
 	value = 22
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You are only slowed somewhat by going off roads or paths."
 	conflicts = list(
 		/datum/quirk/hard_yards,
@@ -989,7 +989,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Health - Tough"
 	desc = "You embody wellness! "
 	value = 32
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You have +20 health. What this actually means is that you need to take ten more points of damage before you go into crit."
 	conflicts = list(
 		/datum/quirk/lifegiverplus,
@@ -1012,7 +1012,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Health - Tougher"
 	desc = "You embody wellness to the MAX! Instantly gain +20 maximum Health."
 	value = 65
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You have +40 health. What this actually means is you need to take 20 more points of damage before you go into crit."
 	conflicts = list(
 		/datum/quirk/lifegiver,
@@ -1035,7 +1035,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Fists of Iron"
 	desc = "You have fists of kung-fury! Increases unarmed damage."
 	value = 18
-	category = "Hand to Hand Quirks"
+	category = QUIRK_CATEGORY_HAND_TO_HAND_QUIRKS
 	mechanics = "Your punches do 6 to 12 damage."
 	conflicts = list(
 		/datum/quirk/nonviolent,
@@ -1057,7 +1057,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Fists of Steel"
 	desc = "You have MASSIVE fists of kung-fury! Even MORE increases unarmed damage."
 	value = 36
-	category = "Hand to Hand Quirks"
+	category = QUIRK_CATEGORY_HAND_TO_HAND_QUIRKS
 	mechanics = "Your punches do 10 to 16 damage, yeowch!"
 	conflicts = list(
 		/datum/quirk/nonviolent,
@@ -1079,7 +1079,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Minor Surgery"
 	desc = "You are a somewhat adequate medical practicioner, capable of performing minor surgery in a pinch."
 	value = 11
-	category = "Medical Quirks"
+	category = QUIRK_CATEGORY_MEDICAL_QUIRKS
 	mechanics = "You gain access to most surgeries, only being limited on brain surgery essentially."
 	conflicts = list(
 		/datum/quirk/surgerymid,
@@ -1096,7 +1096,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Advanced Surgery"
 	desc = "You are a competent medical practicioner, capable of performing a larger array of surgeries."
 	value = 33
-	category = "Medical Quirks"
+	category = QUIRK_CATEGORY_MEDICAL_QUIRKS
 	mechanics = "You gain access to most surgeries, and advanced wound tending surgeries."
 	conflicts = list(
 		/datum/quirk/surgeryhigh,
@@ -1113,7 +1113,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Expert Surgery"
 	desc = "You are a well established surgeon. You can perform most, if not all, surgeries."
 	value = 66
-	category = "Medical Quirks"
+	category = QUIRK_CATEGORY_MEDICAL_QUIRKS
 	mechanics = "You gain access to most surgeries, particularly expert wound tending surgeries."
 	conflicts = list(
 		/datum/quirk/surgerylow,
@@ -1130,7 +1130,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Explosives Crafting"
 	desc = "You have strong feelings about the future of industrial society."
 	value = 14
-	category = "Crafting Quirks"
+	category = QUIRK_CATEGORY_CRAFTING_QUIRKS
 	mechanics = "You gain access to the recipes to make all sorts of explosives, including mines!"
 	conflicts = list( //dumb
 
@@ -1161,7 +1161,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Improved Innate Healing"
 	desc = "You have a deeper reservoir for innate healing, whether it's through magic, medical tending, or licking. Check the neutral traits for these abilities."
 	value = 32
-	category = "Healer Quirks"
+	category = QUIRK_CATEGORY_HEALER_QUIRKS
 	mechanics = "Your innate healing functions now have 25 uses instead of only 5. They will still regenerate at the same speed though."
 	conflicts = list(
 
@@ -1238,7 +1238,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Post Apocalyptic Tribal Traditions"
 	desc = "You remember how to make your peoples ancient garments after all this time."
 	value = 0
-	category = "Crafting Quirks"
+	category = QUIRK_CATEGORY_CRAFTING_QUIRKS
 	mechanics = "You gain access to a massive amount of recipes involving numerous different Fallout tribes."
 	conflicts = list()
 	mob_trait = TRAIT_TRIBAL_TRAD
@@ -1393,24 +1393,24 @@ GLOBAL_LIST_INIT(security_expert, list(
 	lose_text = span_danger("You forget how your ancestors have created their garments.")
 	locked =  FALSE */
 
-/datum/quirk/bonedancertraditions/add()
-	var/mob/living/carbon/human/H = quirk_holder
-	ADD_TRAIT(H, TRAIT_BONEDANCER_TRAD, "Bone Dancer Traditions")
-	if(!H.mind.learned_recipes)
-		H.mind.learned_recipes = list()
-	H.mind.learned_recipes |= GLOB.bonedancer_traditions_recipes
+// /datum/quirk/bonedancertraditions/add()
+// 	var/mob/living/carbon/human/H = quirk_holder
+// 	ADD_TRAIT(H, TRAIT_BONEDANCER_TRAD, "Bone Dancer Traditions")
+// 	if(!H.mind.learned_recipes)
+// 		H.mind.learned_recipes = list()
+// 	H.mind.learned_recipes |= GLOB.bonedancer_traditions_recipes
 
-/datum/quirk/bonedancertraditions/remove()
-	var/mob/living/carbon/human/H = quirk_holder
-	if(!QDELETED(H))
-		REMOVE_TRAIT(H, TRAIT_BONEDANCER_TRAD, "Bone Dancer Traditions")
-	H.mind.learned_recipes -= GLOB.bonedancer_traditions_recipes
+// /datum/quirk/bonedancertraditions/remove()
+// 	var/mob/living/carbon/human/H = quirk_holder
+// 	if(!QDELETED(H))
+// 		REMOVE_TRAIT(H, TRAIT_BONEDANCER_TRAD, "Bone Dancer Traditions")
+// 	H.mind.learned_recipes -= GLOB.bonedancer_traditions_recipes
 
 /datum/quirk/brickwall
 	name = "Brick wall"
 	desc = "You just don't move when people try to push you out of the way, for whatever reason."
 	value = 14
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You are treated as being in harm intent at all times when it comes to people moving through your space."
 	conflicts = list( //health flimsy maybe? Maybe not though?  idk
 
@@ -1465,13 +1465,14 @@ GLOBAL_LIST_INIT(security_expert, list(
 	gain_text = span_notice("You've decided radiation just doesn't matter.")
 	lose_text = span_danger("You no longer feel like you could probably live in a microwave while its on.")
 	locked =  FALSE 
+	disabled = TRUE
 
 
 /datum/quirk/radimmuneish
 	name = "Radiation - Mostly Immune"
 	desc = "Gieger Counters are for suckers, mostly."
 	value = 15
-	category = "Radiation Quirks"
+	category = QUIRK_CATEGORY_RADIATION_QUIRKS
 	mechanics = "Who needs a geiger counter? Gives 75% innate rad resist."
 	conflicts = list(
 		/datum/quirk/radimmunesorta,
@@ -1488,7 +1489,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Radiation - Sorta Immune"
 	desc = "Gieger Counters are for suckers, sorta. Gives 50% innate rad resist."
 	value = 33
-	category = "Radiation Quirks"
+	category = QUIRK_CATEGORY_RADIATION_QUIRKS
 	mechanics = "You only absorb half of all radiation."
 	conflicts = list(
 		/datum/quirk/radimmuneish,
@@ -1506,7 +1507,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Does not Eat"
 	desc = "You don't need to eat to live, lucky you."
 	value = 14
-	category = "Food Quirks"
+	category = QUIRK_CATEGORY_FOOD_QUIRKS
 	mechanics = "Your hunger never goes down, simple as that."
 	conflicts = list( //any of the eating quirks
 		/datum/quirk/voracious,
@@ -1538,7 +1539,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Quicker Carry"
 	desc = "You're better than most people when it comes to carrying people!"
 	value = 18
-	category = "Medical Quirks"
+	category = QUIRK_CATEGORY_MEDICAL_QUIRKS
 	mechanics = "When using the fireman carry you lift people up at a faster rate."
 	conflicts = list(
 		// /datum/quirk/quickcarry,
@@ -1554,7 +1555,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Quick Carry"
 	desc = "You're exceptionally good when it comes to carrying people!"
 	value = 14
-	category = "Medical Quirks"
+	category = QUIRK_CATEGORY_MEDICAL_QUIRKS
 	mechanics = "When using the fireman carry you lift people up onto your shoulders a bit faster!"
 	conflicts = list(
 		/datum/quirk/quickercarry,
@@ -1570,7 +1571,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Experienced Builder"
 	desc = "You're good at putting stuff together!"
 	value = 14
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You build structures at a much faster speed and also can use the *brick verb to magic up bricks from brickspace with no cooldown."
 	conflicts = list()
 	mob_trait = TRAIT_QUICK_BUILD
@@ -1584,7 +1585,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Trained Grappler"
 	desc = "You've got real skills when it comes to grabbing people by the bits!"
 	value = 32
-	category = "Hand to Hand Quirks"
+	category = QUIRK_CATEGORY_HAND_TO_HAND_QUIRKS
 	mechanics = "Any grab that you do, even just shift clicking on people, is automatically an aggressive grab. Annoying for making trains of people to move in, but great for forcing a weapon out of someones hand."
 	conflicts = list()
 	mob_trait = TRAIT_STRONG_GRABBER
@@ -1598,7 +1599,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Master Martial Artist"
 	desc = "You occasionally hit so hard that they don't even seem like themselves anymore!"
 	value = 32
-	category = "Hand to Hand Quirks"
+	category = QUIRK_CATEGORY_HAND_TO_HAND_QUIRKS
 	mechanics = "Your punches, when you roll max damage, inflict clone damage instead of normal brute damage on people. Which is harder to heal and generally somewhat devastating."
 	conflicts = list(
 		/datum/quirk/nonviolent,
@@ -1614,7 +1615,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Sure Strike"
 	desc = "You've either trained for years, got a lucky mutation, or are naturally strong! Your punches always do MAX damage!"
 	value = 32
-	category = "Hand to Hand Quirks"
+	category = QUIRK_CATEGORY_HAND_TO_HAND_QUIRKS
 	mechanics = "You ALWAYS punch for MAX damage."
 	conflicts = list(
 		/datum/quirk/nonviolent,
@@ -1630,7 +1631,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "Your steps just make no noise, or maybe everyone elses buttcheeks are just that loud?"
 	mob_trait = TRAIT_SILENT_STEP
 	value = 32
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "Your footsteps never make noise."
 	conflicts = list(
 		/datum/quirk/overweight,
@@ -1646,7 +1647,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Dead Eye"
 	desc = "When you hit your target, you frequently hit your target's vital points more often than not."
 	value = 65
-	category = "Ranged Quirks"
+	category = QUIRK_CATEGORY_RANGED_QUIRKS
 	mechanics = "You have advantage on all random ranged damage rolls. (roll twice and take the highest). \
 				On top of that your shots have better chances of hitting simple mobs on their vital spots, aiming your shots on the head, arms and legs trigger gimmicks \
 				more often. Gimmicks that vary between stunning a mob temporarely to dealing more damage."
@@ -1667,7 +1668,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Straight Shooter"
 	desc = "You're a better than average shot."
 	value = 44
-	category = "Ranged Quirks"
+	category = QUIRK_CATEGORY_RANGED_QUIRKS
 	mechanics = "Adjusts various accuracy equations to be more in your favor. In general, you're about twice as accurate with guns, and suffer less penalties from one-handing two-hand guns."
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -1685,7 +1686,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Bow Trained"
 	desc = "You've trained quite a bit with bows of many types."
 	value = 14
-	category = "Ranged Quirks"
+	category = QUIRK_CATEGORY_RANGED_QUIRKS
 	mechanics = "You don't need to press z to pull the string back on a bow, instead you can just spam click to fire rapidly."
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -1702,7 +1703,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Bolt Worker"
 	desc = "You've spent a lot of time working the bolt of a rifle, or the pump action of a shotgun. Your skill allows you to click to work the action instead of doing it manually."
 	value = 14
-	category = "Ranged Quirks"
+	category = QUIRK_CATEGORY_RANGED_QUIRKS
 	mechanics = "You don't need to press z to rack the bolt of your rifle, instead you can just spam click to fire rapidly."
 	conflicts = list(
 		/datum/quirk/clumsy,
@@ -1719,7 +1720,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Magically Attuned"
 	desc = "You were either born with a natural inclination for magic or were taught its secrets."
 	value = 0
-	category = "Ranged Quirks"
+	category = QUIRK_CATEGORY_RANGED_QUIRKS
 	mechanics = "You can use magical wands, staves, and other advanced magical items. However, magic has a cost -- your potential elsewhere is limited, and learning a martial art will sever your connection to magic."
 	conflicts = list(
 	// /datum/quirk/deadeye,
@@ -1737,7 +1738,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Play Dead"
 	desc = "You're good at acting!"
 	value = 14
-	category = "Functional Quirks"
+	category = QUIRK_CATEGORY_FUNCTIONAL_QUIRKS
 	mechanics = "Your *deathgasp will be extra convincing to rudimentary tests, such as healthhuds and examine, doing so may deal a small quantity of toxin damage."
 	conflicts = list()
 	mob_trait = TRAIT_PLAY_DEAD
@@ -1751,7 +1752,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Packrat"
 	desc = "You are well practiced at hoarding random junk, and can carry nearly double what most others can."
 	value = 34
-	category = "Functional Quirks"
+	category = QUIRK_CATEGORY_FUNCTIONAL_QUIRKS
 	mechanics = "You can carry a second backpack or duffel bag in your suit slot, for additional stuff!"
 	conflicts = list()
 	mob_trait = TRAIT_PACKRAT
@@ -1929,7 +1930,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Wild Shape"
 	desc = "You've developed through some means the ability to adopt a lesser form. What you become was decided by yourself or mere circumstance, but you can transform back and forth at will."
 	value = 15
-	category = "Mutant Quirks"
+	category = QUIRK_CATEGORY_MUTANT_QUIRKS
 	mechanics = "You gain the shapeshift spell and can cast it nearly at will! This allows you to transform into an animal and back again. Once you select a shape, it cannot be changed."
 	conflicts = list(
 
@@ -1939,6 +1940,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	lose_text = span_danger("You no longer have any desires of changing at will.")
 	medical_record_text = "Patient appears to be wild, in some form or another."
 	locked = FALSE
+	disabled = FALSE // It might be broken but its our special kind of broken
 	var/obj/effect/proc_holder/spell/targeted/shapeshift/wildshape
 
 
@@ -1957,7 +1959,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Zoomies"
 	desc = "Physical prowess, mutation, or cybernetic enhancement, you can sprint a good deal longer than most folk. Justt don't run into things."
 	value = 14
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You use 25% less stamina while sprinting! Just don't run into anything or it will hurt more than normal."
 	conflicts = list(
 		/datum/quirk/cantrun,
@@ -1972,7 +1974,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Zoomies - Super"
 	desc = "Frenetic energy, densified leg-muscles, or cyber-organs, you can sprint way longer than most folk. Just... REALLY don't run into things. Seriously."
 	value = 28
-	category = "Movement Quirks"
+	category = QUIRK_CATEGORY_MOVEMENT_QUIRKS
 	mechanics = "You use 50% less stamina while sprinting! Seriously, though, be careful running into things, it could break your back."
 	conflicts = list(
 		/datum/quirk/cantrun,
@@ -1987,7 +1989,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Artifact Hunter"
 	desc = "You have a keen eye for identifying magical, otherworldly trash! You can identify artifacts at a glance."
 	value = 32
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "You have no wait time when it comes to identifying artifacts."
 	conflicts = list()
 	mob_trait = TRAIT_ARTIFACT_IDENTIFY
@@ -2002,7 +2004,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "Through some genetic quirk you have access to horrifying arm blades made out of bone with the *armblade verb."
 
 	value = 32
-	category = "Mutant Quirks"
+	category = QUIRK_CATEGORY_MUTANT_QUIRKS
 	mechanics = "Your arm can turn into a horrible flesh blade."
 	conflicts = list()
 	mob_trait = TRAIT_ARMBLADE
@@ -2017,7 +2019,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "Through some cybernetic modifications, you have access to horrifying arm cyberblade with the *cyber verb."
 
 	value = 32
-	category = "Mutant Quirks"
+	category = QUIRK_CATEGORY_MUTANT_QUIRKS
 	mechanics = "Your arm can turn into a horrifying cyberblade"
 	conflicts = list()
 	mob_trait = TRAIT_CYBERKNIFE
@@ -2030,7 +2032,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Arm Tentacle"
 	desc = "Through some genetic quirk you have access to horrifying arm tentacle to grab people and mobs with. Use *tentarm verb to summon it."
 	value = 28 // You grab an item from a distance, auto-activates grenades in your hand, its not great, but not terrible.
-	category = "Mutant Quirks"
+	category = QUIRK_CATEGORY_MUTANT_QUIRKS
 	mechanics = "Your arm can turn into a horrible meat bludgeon."
 	conflicts = list()
 	mob_trait = TRAIT_ARMTENT
@@ -2042,7 +2044,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Mage Grab" // Better name pending
 	desc = "Through some powerful spell, you can now grab items from a distance. Effectively identical to tentacle arms, but not tentacles."
 	value = 28
-	category = "Magic Quirks"
+	category = QUIRK_CATEGORY_MAGIC_QUIRKS
 	mechanics = "You can fire a beam that teleports items into your hand, or drags mobs to you."
 	conflicts = list()
 	mob_trait = TRAIT_MAGEGRAB
@@ -2051,7 +2053,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Biter - Big"
 	desc = "Your jaws are just absolutley massive.  You *bite harder, but a bit slower."
 	value = 22
-	category = "Biter Quirks"
+	category = QUIRK_CATEGORY_BITER_QUIRKS
 	mechanics = "When using *bite your jaws do increased damage compared to normal but with a slower attack speed."
 	conflicts = list(
 		/datum/quirk/fastbiter,
@@ -2069,7 +2071,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Biter - Fast"
 	desc = "Your jaws are just UBELIEVABLY FAST.  Use *bite to bite like the WIND."
 	value = 22
-	category = "Biter Quirks"
+	category = QUIRK_CATEGORY_BITER_QUIRKS
 	mechanics = "When using *bite your jaws do less damage compared to normal but with a faster attack speed."
 	conflicts = list(
 		/datum/quirk/bigbiter,
@@ -2087,7 +2089,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Biter - Pretend"
 	desc = "Your biter is a little love nipper."
 	value = 0
-	category = "Biter Quirks"
+	category = QUIRK_CATEGORY_BITER_QUIRKS
 	mechanics = "When using *bite you do no damage (unless you have big/small leagues!)"
 	conflicts = list(
 		/datum/quirk/bigbiter,
@@ -2105,7 +2107,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Biter - Venomous"
 	desc = "One way or another your *bite can inject a strong paralytic venom of some kind!"
 	value = 22
-	category = "Biter Quirks"
+	category = QUIRK_CATEGORY_BITER_QUIRKS
 	mechanics = "Your bite does stamina damage to both players and mobs, but less brute damage overall."
 	conflicts = list(
 		/datum/quirk/bigbiter,
@@ -2123,7 +2125,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Biter - Sabre Toothed"
 	desc = "Your *bite strength is ENORMOUS, but it takes all your focus to use it."
 	value = 32
-	category = "Biter Quirks"
+	category = QUIRK_CATEGORY_BITER_QUIRKS
 	mechanics = "Your bite is the biggest bite, and the slowest."
 	conflicts = list(
 		/datum/quirk/bigbiter,
@@ -2141,7 +2143,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Clawer - Big"
 	desc = "Your claws are just absolutley massive.  Your *claw attack hits harder, but a bit slower."
 	value = 22
-	category = "Clawer Quirks"
+	category = QUIRK_CATEGORY_CLAWER_QUIRKS
 	mechanics = "When using *claw your claws do more damage compared to normal but with a slower attack speed."
 	conflicts = list(
 		/datum/quirk/fastclawer,
@@ -2159,7 +2161,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Clawer - Fast"
 	desc = "Your claw swipes are nearly the speed of sound, your *claw attack hits WAY faster."
 	value = 22
-	category = "Clawer Quirks"
+	category = QUIRK_CATEGORY_CLAWER_QUIRKS
 	mechanics = "When using *claw your claws do less damage than normal, but with a faster attack speed."
 	conflicts = list(
 		/datum/quirk/bigclawer,
@@ -2177,7 +2179,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Clawer - Pretend"
 	desc = "Your claws are for being silly, not dangerous."
 	value = 0
-	category = "Clawer Quirks"
+	category = QUIRK_CATEGORY_CLAWER_QUIRKS
 	mechanics = "Your claws, when used with the *claw verb do no damage at all unless you have big/small leagues."
 	conflicts = list(
 		/datum/quirk/bigclawer,
@@ -2195,7 +2197,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Clawer - Venomous"
 	desc = "Something about your claws cause weakness in those you rake, use *claw to stun mobs/players."
 	value = 22
-	category = "Clawer Quirks"
+	category = QUIRK_CATEGORY_CLAWER_QUIRKS
 	mechanics = "When using *claw your claws do stamina damage on top of their normal damage, letting you stun players & mobs."
 	conflicts = list(
 		/datum/quirk/bigclawer,
@@ -2213,7 +2215,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Clawer - Razors"
 	desc = "Your *claw attack really does rend and tear huge guts."
 	value = 32
-	category = "Clawer Quirks"
+	category = QUIRK_CATEGORY_CLAWER_QUIRKS
 	mechanics = "When using *claw your claws do CRAZY good damage (for claws, anyway), but a bit slower overall."
 	conflicts = list(
 		/datum/quirk/bigclawer,
@@ -2233,7 +2235,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Tail - Big"
 	desc = "You got that big tail, good for big wumps. Use with *tailer"
 	value = 22
-	category = "Tailer Quirks"
+	category = QUIRK_CATEGORY_TAILER_QUIRKS
 	mob_trait = TRAIT_TAILSMASH
 	gain_text = span_notice("Your tail is suddenly much larger.")
 	lose_text = span_danger("Your tail is suddenly smaller.")
@@ -2244,7 +2246,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Tail - Whiplike"
 	desc = "You got that FAST tail, good for whipping about. Use with *tailer"
 	value = 22
-	category = "Tailer Quirks"
+	category = QUIRK_CATEGORY_TAILER_QUIRKS
 	mob_trait = TRAIT_TAILWHIP
 	gain_text = span_notice("Your tail is now much lighter!")
 	lose_text = span_danger("Your tail feels heavy.")
@@ -2255,7 +2257,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Tail - Playful"
 	desc = "Your tail is just a soft extension of the rest of you. use with *tailer"
 	value = 0
-	category = "Tailer Quirks"
+	category = QUIRK_CATEGORY_TAILER_QUIRKS
 	mob_trait = TRAIT_TAILPLAY
 	gain_text = span_notice("Your tail feels very soft and plush.")
 	lose_text = span_danger("Your tail feels rough and raggedy.")
@@ -2266,7 +2268,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Tail - Venomous"
 	desc = "One way or another your *tailer verb is capable of inflicting venomous attacks with your tail!"
 	value = 22
-	category = "Tailer Quirks"
+	category = QUIRK_CATEGORY_TAILER_QUIRKS
 	mob_trait = TRAIT_TAILSPICY
 	gain_text = span_notice("Your tail secretes a viscous fluid.")
 	lose_text = span_danger("Your tail no longer produces venom.")
@@ -2277,7 +2279,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Tail - Thagomizer"
 	desc = "A very dangerous *tailer, for beating the snot out of things."
 	value = 32
-	category = "Tailer Quirks"
+	category = QUIRK_CATEGORY_TAILER_QUIRKS
 	mob_trait = TRAIT_TAILTHAGO
 	gain_text = span_notice("Your tail feels like a bludgeon!")
 	lose_text = span_danger("Your tail suddenly feels weak.")
@@ -2289,7 +2291,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Shocking Grasp"
 	desc = "You know how to cast the shocking grasp cantrip"
 	value = 32
-	category = "Magic Quirks"
+	category = QUIRK_CATEGORY_MAGIC_QUIRKS
 	mechanics = "When using the *shocking emote, you summon a melee spell cantrip that strikes fast and delivers powerful shocks to your foes"
 	conflicts = list(
 		// /datum/quirk/littleleagues,
@@ -2304,7 +2306,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Innate Telepathy"
 	desc = "You innately have the ability to project your thoughts directly into the minds of others."
 	value = 0 
-	category = "Magic Quirks"
+	category = QUIRK_CATEGORY_MAGIC_QUIRKS
 	mechanics = "You can use a telepathy spell to speak to others' minds directly. However, you and your target will glow so it's quite obvious you casted it."
 	// conflicts = list(/datum/quirk/mute) // Negligibly useful quirk shouldnt cost points or slots, but also shouldnt make a big negative into free points. Also you can get telepathy through genetics, which is easier now.
 	mob_trait = TRAIT_TELEPATHY
@@ -2360,7 +2362,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	name = "Former Tribal"
 	desc = "You used to be part of one of the tribes scattered throughout the wasteland. You may have some additional skills as a result. Allowing you to make some tribal medical supplies. Advanced tech still confuses you though."
 	value = 22
-	category = "Lifepath Quirks"
+	category = QUIRK_CATEGORY_LIFEPATH_QUIRKS
 	mechanics = "Grants access to a wide variety of recipes and allows you to use primitive chemmasters with which you can make complex potions/poisons."
 	conflicts = list(
 		/datum/quirk/technophreak,
@@ -2834,7 +2836,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You're more resistant to physical trauma than others."
 	mob_trait = TRAIT_BRUTERESIST
 	value = 22
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You take 5% less brute damage."
 	conflicts = list(
 		/datum/quirk/bruteresistmajor,
@@ -2857,7 +2859,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You're even more resistant to physical trauma than others. You've got skin of steel!"
 	mob_trait = TRAIT_BRUTERESISTMAJOR
 	value = 44
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You take 10% less brute damage."
 	conflicts = list(
 		/datum/quirk/bruteresist,
@@ -2880,7 +2882,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You're more resistant to burns than others."
 	mob_trait = TRAIT_BURNRESIST
 	value = 22
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You take 5% less burn damage."
 	conflicts = list(
 		/datum/quirk/burnresistmajor,
@@ -2903,7 +2905,7 @@ GLOBAL_LIST_INIT(security_expert, list(
 	desc = "You're even more resistant to burns than others. Your skin is insulated!"
 	mob_trait = TRAIT_BURNRESISTMAJOR
 	value = 44
-	category = "Health Quirks"
+	category = QUIRK_CATEGORY_HEALTH_QUIRKS
 	mechanics = "You take 10% less burn damage."
 	conflicts = list(
 		/datum/quirk/burnresist,

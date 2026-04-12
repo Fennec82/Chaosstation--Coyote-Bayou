@@ -1062,7 +1062,12 @@
 		cool_mob.projectile_sound_properties = projectile_sound_properties
 		cool_mob.melee_damage_lower = melee_damage_lower
 		cool_mob.melee_damage_upper = melee_damage_upper
-		cool_mob.mob_armor = getArmor(arglist(mob_armor))
+		if(islist(mob_armor))
+			cool_mob.mob_armor = getArmorFromList(mob_armor)
+		else if (istype(mob_armor, /datum/armor))
+			cool_mob.mob_armor = mob_armor
+		else
+			cool_mob.mob_armor = null
 	myspawner.special_mobs -= src
 	cool_mob.do_alert_animation(cool_mob)
 	return cool_mob
